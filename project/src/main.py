@@ -1,7 +1,7 @@
 import pandas as pd
-from src.blast_links import load_blast
-from src.parser import parse_genbank
-from src.plotter import plot_genomes
+from DATA.PHAGE_genome_analysis.Phage_alignement_visualisation.project.src.blast_links import load_blast
+from DATA.PHAGE_genome_analysis.Phage_alignement_visualisation.project.src.parser import parse_genbank
+from DATA.PHAGE_genome_analysis.Phage_alignement_visualisation.project.src.plotter import plot_genomes
 from collections import defaultdict
 import textwrap
 import glob
