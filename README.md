@@ -22,11 +22,34 @@
 ## Installation 
 You have to clone this repository and work in the directory. It contains the following tree: 
 ```bash
+├── LICENSE
+├── Test_data
+│   └── project
+│       ├── data
+│       │   ├── blast
+│       │   │   └── allPV_vs_allPV.tsv
+│       │   └── genomes
+│       │       ├── Pv-AC1.gbk
+│       │       ├── Pv-AC3.gbk
+│       │       ├── Pv-AC4.gbk
+│       │       ├── Pv-AM6.gbk
+│       │       ├── Pv-AM9.gbk
+│       │       ├── Pv-MA11.gbk
+│       │       ├── Pv-MA12.gbk
+│       │       └── Pv-MA14.gbk
+│       ├── genome_comparison_all_PV.svg
+│       └── src
+│           ├── __init__.py
+│           ├── blast_links.py
+│           ├── main.py
+│           ├── parser.py
+│           └── plotter.py
+└── README.md
 
 ```
 You can do so by using the following command: 
 ```bash
-git clone https:
+git clone https://github.com/allychamp/Phage_alignement_visualisation.git
 
 ```
 Note that you should have [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) or [miniconda](https://docs.anaconda.com/miniconda/) installed to run this pipeline. 
