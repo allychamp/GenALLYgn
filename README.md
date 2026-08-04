@@ -69,7 +69,10 @@ The rest of the dependencies should be installed in the appropriate conda enviro
 
 ### `./mains.py/`
 ## Usage
-
+To lunch the script, first complete the config file. Then, go in the directorie containning the script and run the following command:
+```bash
+python -m src.main
+```
 
 
 

@@ -1,19 +1,55 @@
 import pandas as pd
-from DATA.PHAGE_genome_analysis.Phage_alignement_visualisation.Test_data.project.src.blast_links import load_blast
-from DATA.PHAGE_genome_analysis.Phage_alignement_visualisation.Test_data.project.src.parser import parse_genbank
-from DATA.PHAGE_genome_analysis.Phage_alignement_visualisation.Test_data.project.src.plotter import plot_genomes
+from src.blast_links import load_blast
+from src.parser import parse_genbank
+from src.plotter import plot_genomes
 from collections import defaultdict
 import textwrap
 import glob
 import os
-# ⚙️ Parameters
-IDENTITY_THRESHOLD = 85
+import yaml
+import subprocess
 
+with open("config.yaml") as f:
+    config = yaml.safe_load(f)
+
+# Paramètres
+IDENTITY_THRESHOLD = config["blast"]["identity_threshold"]
+#Use function define in blast_link
+COVERAGE_THRESHOLD = config["blast"]["coverage_threshold"]
+
+
+# 1. Concatenate all protein fasta files
+print("Step 1: Concatenating protein fasta files...")
+faa_files = glob.glob(f"{config['paths']['faa_dir']}*.faa")
+with open(config["paths"]["all_proteins"], "w") as outfile:
+    for faa in faa_files:
+        with open(faa) as infile:
+            outfile.write(infile.read())
+
+# 2. Make BLAST database
+print("Step 2: Building BLAST database...")
+subprocess.run([
+    "makeblastdb",
+    "-in", config["paths"]["all_proteins"],
+    "-dbtype", "prot"
+], check=True)
+
+# 3. Run all-vs-all BLAST
+print("Step 3: Running all-vs-all BLAST...")
+subprocess.run([
+    "blastp",
+    "-query", config["paths"]["all_proteins"],
+    "-db", config["paths"]["all_proteins"],
+    "-evalue", "1e-5",
+    "-num_threads", str(config["blast"]["num_threads"]),
+    "-outfmt", "6 qseqid sseqid pident length qlen slen bitscore evalue",
+    "-out", config["paths"]["blast_file"]
+], check=True)
 
 
 # Load gene color lookup
-cds_df = pd.read_csv("/home/champa/DATA/PHAGE_genome_analysis/Champoux_A/Analysis_05-2026/Analysis/clinker_alignements/merged_cds_predictions.csv")
-color_df = pd.read_csv("/home/champa/DATA/PHAGE_genome_analysis/Champoux_A/Analysis_05-2026/Analysis/clinker_alignements/function_color_mapping.csv")
+cds_df = pd.read_csv(config["paths"]["cds_table"])
+color_df = pd.read_csv(config["paths"]["color_table"])
 
 # Strip Pharokka_ prefix to match your locus tags
 cds_df["gene"] = cds_df["gene"].str.removeprefix("Pharokka_")
@@ -93,7 +129,8 @@ def order_genomes_by_similarity(genomes, genome_links):
 #Use the function create in the parser.py to return genomes object 
 genomes = []
 # Iterates over all the gbk in genomes file
-for gbk in glob.glob("data/genomes/*.gbk"):
+
+for gbk in glob.glob(f"{config['paths']['genomes_dir']}*.gbk"):
     parsed = parse_genbank(gbk)
     #Attributing the file name as genome's name
     fname = os.path.basename(gbk).replace('.gbk', '')
@@ -114,8 +151,20 @@ for gbk in glob.glob("data/genomes/*.gbk"):
 
 # print("Nombre de gènes :", len(gene_lookup))
 
-#Use function define in blast_link
-links = load_blast("data/blast/allPV_vs_allPV.tsv", min_identity=IDENTITY_THRESHOLD)
+
+
+links = load_blast(
+    config["paths"]["blast_file"],
+    min_identity=IDENTITY_THRESHOLD,
+    min_coverage=COVERAGE_THRESHOLD
+)
+print("Total links loaded:", len(links))
+print("Thresholds - identity:", IDENTITY_THRESHOLD, "coverage:", COVERAGE_THRESHOLD)
+
+# Check if blast file exists and has content
+import os
+print("BLAST file exists:", os.path.exists(config["paths"]["blast_file"]))
+print("BLAST file size:", os.path.getsize(config["paths"]["blast_file"]))
 
 # for tag in list(gene_lookup.keys())[:5]:
 #     print(f"  {tag}")
@@ -128,8 +177,7 @@ gene_index = {}
 for genome in genomes:
     for gene in genome.genes:
         gene_index[gene.locus_tag] = (genome, gene)
-
-# 
+print("gene_index sample:", list(gene_index.keys())[:3])
 all_genome_links = []
 for hit in links:
     #Make sure to only keep hits in gbk and blast 
@@ -195,8 +243,9 @@ function_color_map = {
         key=lambda x: x[0].lower()
     )
 }
-plot_genomes(genomes, genome_links, "genome_comparison_all_PV.svg",
+
+plot_genomes(genomes, genome_links, config["paths"]["output_svg"],
              identity_threshold=IDENTITY_THRESHOLD,
              gene_color_map=gene_color_map,
              function_color_map=function_color_map,
-             spacing=0.8)
+             spacing=config["plot"]["spacing"])
