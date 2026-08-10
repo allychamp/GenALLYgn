@@ -64,7 +64,6 @@ def order_genomes_by_similarity(genomes, genome_links):
     genomes: a list of genome objects
     genome_links: a list of (gene1, gene2, identity) tuples representing connections between genes from different genomes, with a similarity score
     """
-    
     #Defying two dictionnaries to store the sum of each similarity score for each genome pair (pair_scores) and 
     #how many links exist between each pair (pair_counts)
     pair_scores = defaultdict(float)
@@ -194,6 +193,10 @@ for hit in links:
 #Using function defined earlier to obtain the order genomes should appear in plot
 genomes = order_genomes_by_similarity(genomes, all_genome_links)
 
+genome_order = config["plot"].get("genome_order", None)
+if genome_order:
+    name_to_genome = {g.name: g for g in genomes}
+    genomes = [name_to_genome[name] for name in genome_order if name in name_to_genome]
 # Making set of adjacent genome only
 adjacent_pairs = set()
 for i in range(len(genomes) - 1):

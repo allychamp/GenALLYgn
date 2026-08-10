@@ -1,17 +1,39 @@
 paths:
-  genomes_dir: "/home/champa/DATA/PHAGE_genome_analysis/Phage_alignement_visualisation/Test_data/project/data/genomes/"
-  faa_dir: "/home/champa/DATA/PHAGE_genome_analysis/Phage_alignement_visualisation/Test_data/project/data/blast/"
-  all_proteins: "/home/champa/DATA/PHAGE_genome_analysis/Phage_alignement_visualisation/Test_data/project/data/blast/all_proteins.faa"
-  blast_file: "/home/champa/DATA/PHAGE_genome_analysis/Phage_alignement_visualisation/Test_data/project/data/allPV_vs_allPV.tsv"
-  cds_table: "/home/champa/DATA/PHAGE_genome_analysis/Champoux_A/Analysis_05-2026/Analysis/clinker_alignements/merged_cds_predictions.csv"
-  color_table: "/home/champa/DATA/PHAGE_genome_analysis/Champoux_A/Analysis_05-2026/Analysis/clinker_alignements/function_color_mapping.csv"
-  output_svg: "/home/champa/DATA/PHAGE_genome_analysis/Phage_alignement_visualisation/Test_data/project/genome_comparison_all_PV_integratedBLASTconfig.svg"
+  #Enter the following paths: 
+  #To a folder containnig all Genbank file
+  genomes_dir: "/home/champa/DATA/PHAGE_genome_analysis/SUS-Paul_Champoux-A_Chenard_A/Analysis_05052026/sample_gbk/"
+  #To a folder containning all proteins fasta file
+  faa_dir: "/home/champa/DATA/PHAGE_genome_analysis/SUS-Paul_Champoux-A_Chenard_A/Analysis_05052026/sample_faa/"
+  #To the directorie you want to save the multifasta proteins file
+  all_proteins: "/home/champa/DATA/PHAGE_genome_analysis/SUS-Paul_Champoux-A_Chenard_A/Analysis_05052026/homemade_visualisation/all_pinkproteins.faa"
+  #To the directorie you want to save the blast all-vs-all proteins file (including the name of that file)
+  blast_file: "/home/champa/DATA/PHAGE_genome_analysis/SUS-Paul_Champoux-A_Chenard_A/Analysis_05052026/homemade_visualisation/allpink_vs_allpink.tsv"
+
+  cds_table: "/home/champa/DATA/PHAGE_genome_analysis/SUS-Paul_Champoux-A_Chenard_A/Analysis_05052026/merged_cds_predictions.csv"
+  color_table: "/home/champa/DATA/PHAGE_genome_analysis/SUS-Paul_Champoux-A_Chenard_A/Analysis_05052026/function_color_mapping.csv"
+  output_svg: "/home/champa/DATA/PHAGE_genome_analysis/SUS-Paul_Champoux-A_Chenard_A/Analysis_05052026/homemade_visualisation/all_sample_30_ordered_colorblind.svg"
 
 blast:
-  identity_threshold: 80
+  identity_threshold: 30
   coverage_threshold: 60
   num_threads: 8
 
 plot:
   spacing: 0.8
   label_width: 25
+  genome_order:
+    - "vB_EcoM_ST012"
+    - "vB_EcoM_ST005"
+    - "vB_EcoM_ST006"
+    - "vB_EcoM_ST010"
+    - "vB_EcoM_ST007"
+    - "vB_EcoM_ST013"
+    - "vB_EcoM_ST004"
+    - "vB_EcoM_ST009"
+    - "vB_EcoM_ST011"   
+    - "vB_EcoM_ST008"
+    - "vB_Eco_STAC02"
+    - "vB_Eco_STAC03"
+    - "vB_Eco_STAC01" 
+    - "vB_EcoP_AC001" 
+    - "vB_EcoP_AC002"

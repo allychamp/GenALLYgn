@@ -175,7 +175,7 @@ def plot_genomes(genomes, links, output_file, identity_threshold=10,
 
     plt.subplots_adjust(left=0.025, right=1, top=0.95, bottom=0.12)
 
-    fig.canvas.draw()  # must be AFTER subplots_adjust
+    fig.canvas.draw() 
     x_start_display = ax.transData.transform((min(g.start for g in genomes), 0))[0]
     fig_width_display = fig.get_figwidth() * fig.dpi
     x0_fig = x_start_display / fig_width_display
@@ -186,21 +186,15 @@ def plot_genomes(genomes, links, output_file, identity_threshold=10,
     cbar.ax.tick_params(labelsize=12)
     ax.tick_params(axis="x", labelsize=11)
   
-    cbar.set_ticks(np.arange(identity_threshold, 100.01, 25))  # every 5 units
+    cbar.set_ticks(np.arange(identity_threshold, 100.01, 10)) 
     # 6) Gene function legend
     if function_color_map:
-
-
         handles = [Patch(facecolor=color, edgecolor="black", linewidth=0.6, label=func)
                 for func, color in function_color_map.items()]
-        
-        # Convert top genome y position to axes fraction
-        top_y_data = (len(genomes) - 1) * spacing
-        top_y_axes = (top_y_data - ax.get_ylim()[0]) / (ax.get_ylim()[1] - ax.get_ylim()[0])
 
         ax.legend(handles=handles, title="Gene function",
                 loc="upper left",
-                bbox_to_anchor=(0.95, top_y_axes+0.1),
+                bbox_to_anchor=(1.01, 0),        # ← right side, bottom
                 bbox_transform=ax.transAxes,
                 frameon=True, fontsize=12, title_fontsize=14)
     plt.subplots_adjust(left=0.025, right=1, top=0.95, bottom=0.1)
