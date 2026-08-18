@@ -1,8 +1,6 @@
 # Alignement of phage genome visualisation  
 <div style="display" flex; justify-content: space-between; align="center">
-  <p>
-    <strong>This repository contains scripts used to align and visualise small DNA fragments such as phages genomes.</strong>
-  </p>
+
   <img src="Image/logo_lab.png" alt="Lab's logo" width="15%" style="margin-left: 10px;">
 </div>
 
@@ -16,7 +14,10 @@
 <a href="https://www.python.org/">![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)</a>
 
 </div>
-
+  <p>
+    <strong>This repository contains scripts used to align and visualise small DNA fragments such as phages genomes.</strong>
+  </p>
+<img src="Image/Output_example.svg" alt="Lab's logo" style="margin-left: 10px;">
 
 ## Installation 
 You have to clone this repository and work in the directory. It contains the following tree: 
