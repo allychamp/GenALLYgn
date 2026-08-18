@@ -3,7 +3,7 @@
   <p>
     <strong>This repository contains scripts used to align and visualise small DNA fragments such as phages genomes.</strong>
   </p>
-  <img src="Images/logo_lab.jpg" alt="Lab's logo" width="15%" style="margin-left: 10px;">
+  <img src="Image/logo_lab.png" alt="Lab's logo" width="15%" style="margin-left: 10px;">
 </div>
 
 *<div align="center">
