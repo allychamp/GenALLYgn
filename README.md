@@ -86,14 +86,14 @@ Then, the path for the desired ouput directory should be assigned to the `analys
 snakemake --use-conda -j 1  --cores 32 --resources mem_mb=15000
 ```
 
-The --cores and --ressources parameters are set using my computers ressources. Please adapt the command for your computer. In linux exploitation system, you can always run :
+The --cores and --resources parameters are set using my computer's resources. Please adapt the command for your computer. In a Linux exploitation system, you can always run :
 ``` 
 free -h
 nproc
 ```
-To know excatly how many core and memory are available on your computer. Please use appropriate command for other exploitation systems.
+To know excatly how many core and memory are available on your computer. Please use appropriate command for other exploitation systems. Also note that this script is optimised to work with a GPU, it might need adjustments if it is not provided.
 ## Output
-The pipeline will ouput a lot of files. Each sample will have a file looking like this (note that only the important files are represented here, there is a few more that are not shown):
+The pipeline will ouput a lot of files. Each sample will have a file looking like this (note that only the important files are represented here. There  a few more that are not shown):
 ```bash
 
 
