@@ -22,30 +22,16 @@
 ## Installation 
 You have to clone this repository and work in the directory. It contains the following tree: 
 ```bash
+├── Image
 ├── LICENSE
-├── Test_data
-│   └── project
-│       ├── data
-│       │   ├── blast
-│       │   │   └── allPV_vs_allPV.tsv
-│       │   └── genomes
-│       │       ├── Pv-AC1.gbk
-│       │       ├── Pv-AC3.gbk
-│       │       ├── Pv-AC4.gbk
-│       │       ├── Pv-AM6.gbk
-│       │       ├── Pv-AM9.gbk
-│       │       ├── Pv-MA11.gbk
-│       │       ├── Pv-MA12.gbk
-│       │       └── Pv-MA14.gbk
-│       ├── genome_comparison_all_PV.svg
-│       └── src
-│           ├── __init__.py
-│           ├── blast_links.py
-│           ├── main.py
-│           ├── parser.py
-│           └── plotter.py
-└── README.md
-
+├── README.md
+├── config.yaml
+└── src
+    ├── __init__.py
+    ├── blast_links.py
+    ├── main.py
+    ├── parser.py
+    └── plotter.py
 ```
 You can do so by using the following command: 
 ```bash
@@ -53,54 +39,31 @@ git clone https://github.com/allychamp/Phage_alignement_visualisation.git
 
 ```
 Note that you should have [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) or [miniconda](https://docs.anaconda.com/miniconda/) installed to run this pipeline. 
-Make sure to activate this environnement to execute the pipeline:
+
+The dependencies can be installed with the yaml file in this repo. This will create a conda environnement containning all the dependencies. To do so, run this command: 
 ```bash
 
 ```
-The rest of the dependencies should be installed in the appropriate conda environnement while executing the pipeline.
-
-## Repository content
-### `./parser.py`
-
-
-### `./blast_links.py/`
-
-
-### `./plotter.py/`
-
-### `./mains.py/`
 ## Usage
-To lunch the script, first complete the config file. Then, go in the directorie containning the script and run the following command:
+Before launching the script, first complete the config file. 
+| Variable | Description |
+|---|---|
+| `genomes_dir` | Path to a folder containing all GenBank files |
+| `faa_dir` | Path to a folder containing all protein FASTA files |
+| `all_proteins` | Path to the directory where the merged multi-FASTA protein file should be saved |
+| `blast_file` | Path (including filename) to the directory where the all-vs-all BLAST results file should be saved |
+| `cds_table` | Path to the summary CSV of all CDS predictions (used for color-coding functions in the visualization) |
+| `color_table` | Path to the CSV mapping each function to its desired color (used for color-coding functions in the visualization) |
+| `output_svg` | Path (including file extension) for the desired output file |
+
+Once all the paths are set up, activate your conda environnemnt:
+```bash
+conda activate name_of_your_env
+```
+
+Then, go in the directorie containning the scripts and run the following command:
 ```bash
 python -m src.main
 ```
-
-
-
-
-
-
-
-
-Then, the path for the desired ouput directory should be assigned to the `analysis_folder_path` variable just below the `data_folder_path` variable in the snakefile. Once all the paths are set up, make sure to be in the `./phage-genome-analysis-pipeline/` directory and run the pipeline using this command: 
-```bash
-snakemake --use-conda -j 1  --cores 32 --resources mem_mb=15000
-```
-
-The --cores and --resources parameters are set using my computer's resources. Please adapt the command for your computer. In a Linux exploitation system, you can always run :
-``` 
-free -h
-nproc
-```
-To know excatly how many core and memory are available on your computer. Please use appropriate command for other exploitation systems. Also note that this script is optimised to work with a GPU, it might need adjustments if it is not provided.
-## Output
-The pipeline will ouput a lot of files. Each sample will have a file looking like this (note that only the important files are represented here. There  a few more that are not shown):
-```bash
-
-
-
-```
-
-
-## Tools Used
-# Phage_alignement_visualisation
+## Citation 
+Please keep an eye open for the preprint of this tool. In the meantime, please cite this repositorie if you use it in your work:

@@ -1,0 +1,45 @@
+paths:
+  #Enter the following paths: 
+  #To a folder containnig all Genbank file
+  genomes_dir: "/sample_gbk/"
+  #To a folder containning all proteins fasta file
+  faa_dir: "/sample_faa/"
+  #To the directorie you want to save the multifasta proteins file
+  all_proteins: "data/all_proteins.faa"
+  #To the directorie you want to save the blast all-vs-all proteins file (including the name of that file)
+  blast_file: "data/all_vs_all.tsv"
+
+  #Those two files are important for color coding the functions in the visualisation. They can be generate with the script
+
+  #Enter the path to the summary of all cds predictions
+  cds_table: "./merged_cds_predictions.csv"
+  #Enter the path to the color wanted for each function 
+  color_table: "./function_color_mapping.csv"
+
+  #Path of the desired outpuut file (including the desired extension)
+  output_svg: "./alignement.svg"
+
+blast:
+  identity_threshold: 30
+  coverage_threshold: 60
+  num_threads: 8
+
+plot:
+  spacing: 0.8
+  label_width: 25
+  genome_order:
+    - "vB_EcoM_ST012"
+    - "vB_EcoM_ST005"
+    - "vB_EcoM_ST006"
+    - "vB_EcoM_ST010"
+    - "vB_EcoM_ST007"
+    - "vB_EcoM_ST013"
+    - "vB_EcoM_ST004"
+    - "vB_EcoM_ST009"
+    - "vB_EcoM_ST011"   
+    - "vB_EcoM_ST008"
+    - "vB_Eco_STAC02"
+    - "vB_Eco_STAC03"
+    - "vB_Eco_STAC01" 
+    - "vB_EcoP_AC001" 
+    - "vB_EcoP_AC002"

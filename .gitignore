@@ -219,3 +219,11 @@ __marimo__/
 
 #blast database files
 *.faa.*
+Example/
+Example/genome_comparison_all_PV_integratedBLASTconfig.svg
+Example/genome_comparison_all_PV.svg
+Example/genome_comparison_test.png
+Example/Input_files
+Example/Test_data
+__pycache__
+data
