@@ -6,10 +6,12 @@ paths:
   faa_dir: "/sample_faa/"
   #To the directorie you want to save the multifasta proteins file
   all_proteins: "data/all_proteins.faa"
-  #To the directorie you want to save the blast all-vs-all proteins file (including the name of that file)
+  #To the directorie you want to save the blast all-vs-all proteins file 
+  #(including the name of that file)
   blast_file: "data/all_vs_all.tsv"
 
-  #Those two files are important for color coding the functions in the visualisation. They can be generate with the script
+  #Those two files are important for color coding the functions in the 
+  #visualisation. They can be generate with the script
 
   #Enter the path to the summary of all cds predictions
   cds_table: "./merged_cds_predictions.csv"
@@ -19,27 +21,28 @@ paths:
   #Path of the desired outpuut file (including the desired extension)
   output_svg: "./alignement.svg"
 
+# Here are the blast parameters you can play with 
 blast:
+  #Please select the desired minimal identity threshold (30 mean at lest 30% of 
+  #the query protein is identical to the the subject, if less the link will be 
+  #ignored)
   identity_threshold: 30
+  #Please select the desired coverage_threshold threshold (60 mean at lest 60% of 
+  #the lenght of the query protein can be align with the subject, if less the 
+  #link will be ignored)
   coverage_threshold: 60
-  num_threads: 8
+  #Ajdst the number of threads available for this task (the more there is, the 
+  #faster the analysis will be)
+  num_threads: 1
 
+#Here are the parameters for the plotting function
 plot:
+  #Adjust the space between genomes
   spacing: 0.8
+  #Adjust the with of the label
   label_width: 25
+  #Specify in which order you want the genomes (as to be the same as the 
+  #file name) if not specifie, genomes will be order by similarity
   genome_order:
-    - "vB_EcoM_ST012"
-    - "vB_EcoM_ST005"
-    - "vB_EcoM_ST006"
-    - "vB_EcoM_ST010"
-    - "vB_EcoM_ST007"
-    - "vB_EcoM_ST013"
-    - "vB_EcoM_ST004"
-    - "vB_EcoM_ST009"
-    - "vB_EcoM_ST011"   
-    - "vB_EcoM_ST008"
-    - "vB_Eco_STAC02"
-    - "vB_Eco_STAC03"
-    - "vB_Eco_STAC01" 
-    - "vB_EcoP_AC001" 
-    - "vB_EcoP_AC002"
+    - "genome1"
+    - "genome2"

@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below."
+title: "Pipeline for phage genome analysis"
+type: software
+authors:
+  - family-names: "Champoux"
+    given-names: "Ally"
+    affiliation: "Faculté de médecine et des sciences de la santé, Université de Sherbrooke"
+  - family-names: "Jacques"
+    given-names: "Pierre-Étienne
+    affiliation: "Faculté des Sciences, Université de Sherbrooke"
+  - family-names: "Fortier"
+    given-names: "Louis-Charles"
+    affiliation: "Faculté de médecine et des sciences de la santé, Université de Sherbrooke"
+date-released: "2026-08-20"
+repository-code: "https://github.com/allychamp/phage-genome-analysis-pipeline"
+abstract: >
+  Python based gene alignements visualisation tool
+keywords:
+  - bioinformatics
+  - phage genomics
+  - Genes alignement
+  - Blast 
+license: MIT

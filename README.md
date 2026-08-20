@@ -55,6 +55,12 @@ Before launching the script, first complete the config file.
 | `cds_table` | Path to the summary CSV of all CDS predictions (used for color-coding functions in the visualization) |
 | `color_table` | Path to the CSV mapping each function to its desired color (used for color-coding functions in the visualization) |
 | `output_svg` | Path (including file extension) for the desired output file |
+| `blast.identity_threshold` | Minimum percent identity required between query and subject proteins for a link to be kept (e.g. 30 = at least 30% identity) |
+| `blast.coverage_threshold` | Minimum percent of the query protein length that must align with the subject for a link to be kept (e.g. 60 = at least 60% coverage) |
+| `blast.num_threads` | Number of threads to use for the BLAST analysis; more threads speeds up the run |
+| `plot.spacing` | Spacing between genomes in the plot |
+| `plot.label_width` | Width of the genome labels in the plot |
+| `plot.genome_order` | Order in which genomes should appear (must match the genome file names) if not specifie, genomes will be order by similarity |
 
 Once all the paths are set up, activate your conda environnemnt:
 ```bash

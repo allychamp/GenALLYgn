@@ -15,47 +15,6 @@ import numpy as np
 #Definition of a function that will represent each gene in an arrow. The gene has been define in the parser.py, 
 # The height is the tickness of the arrow of eahc gene (define by user). The color will change
 def draw_gene(ax, gene, y, height=0.4, color="#5a5a5f"):
-    # function_to_color = {
-    # 'Tail': '#dcf3ff',
-    # 'Collars': '#baf2ef',
-    # 'Head-tail joinning':'#0013de',
-    # 'Portal': '#396d7c',
-    # 'Capsid': '#4e4cb0',
-
-    # 'Helicase': "#ffaa1d",
-    # 'Nuclease': "#ffdf00",
-    # 'Terminase': "#ffff00",
-    # 'Integration': "#b18914",
-    # 'DNA polymerase': '#ffe05f',
-    # 'Annealing': "#f7a151",
-    # 'Primase': "#fff380",
-    # 'Replication initiation': "#e77500",
-
-    # 'Activator': '#ba0012',
-    # 'Repressor': "#a04848",
-
-    # 'Toxin/anti-toxin': "#c2f74f",
-    # 'Anti-restriction': '#74d600',
-    # 'Sir2': '#028900',
-    # 'CRISPR/anti-CRISPR': '#13762e',
-    # 'Super-infection exclusion': '#cce451',
-
-    # 'Endolysin': '#fa638e',
-    # 'Spanin': '#ffabc8',
-    # 'Lysis inhibition': '#fcdfe3',
-    # 'Holin': '#ff3377',
-
-    # 'Packaging/assembly': '#bfbaf2',
-    # 'Ejection': "#4a1170",
-    # 'Reductase': "#afa9a9",
-    # 'Phosphorylation': "#20706c",
-    # 'RNA-associated': "#681b1b",
-    # 'Nucleotide metabolism': "#5e4120",
-    # 'Transferase': "#9c755b",
-    # 'Cell wall depolymerase': "#c9c6ec",
-    # 'Adsorption-related': "#b48ca8",
-    # 'Unknown': "#5a5a5f"
-    # }
     #That flip the gene if it's identify on the antisens strand
     if gene.strand == 1:
         x1 = gene.start
@@ -63,11 +22,6 @@ def draw_gene(ax, gene, y, height=0.4, color="#5a5a5f"):
     else:
         x1 = gene.end
         x2 = gene.start
-    # function_color = ()
-    # for f,c in function_color.items():
-    #     if f in gene.function:
-    #         function_color = function_to_color.keys()
-    
 
     # Lenght is define as the lenght of the gene and head is the head of the arrow that will be use later
     length = abs(x2 - x1)
