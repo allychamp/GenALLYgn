@@ -73,3 +73,4 @@ python -m src.main
 ```
 ## Citation 
 Please keep an eye open for the preprint of this tool. In the meantime, please cite this repositorie if you use it in your work:
+Champoux, A., Jacques, P., & Fortier, L. (2026). Pipeline for phage genome analysis [Computer software]. https://github.com/allychamp/phage-genome-analysis-pipeline
