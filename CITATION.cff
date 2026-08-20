@@ -17,8 +17,11 @@ repository-code: "https://github.com/allychamp/phage-genome-analysis-pipeline"
 abstract: >
   Python based gene alignements visualisation tool
 keywords:
+  - alignement
   - bioinformatics
-  - phage genomics
-  - Genes alignement
-  - Blast 
+  - genes 
+  - microbiology 
+  - phage-genomics
+  - tool
+  - visualization
 license: MIT
