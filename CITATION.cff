@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this repository, please cite it as below."
-title: "Pipeline for phage genome analysis"
+title: "GenALLYgn"
 type: software
 authors:
   - family-names: "Champoux"
@@ -15,7 +15,7 @@ authors:
 date-released: "2026-08-20"
 repository-code: "https://github.com/allychamp/phage-genome-analysis-pipeline"
 abstract:
-  Python based gene alignements visualisation tool
+  Python based genes alignement and visualisation tool
 keywords:
   - alignement
   - bioinformatics

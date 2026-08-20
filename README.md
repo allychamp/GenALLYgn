@@ -1,11 +1,11 @@
-# Alignement of phage genome visualisation  
+# GenALLYgn - Genes alignement and visualisation tool   
 <div style="display" flex; justify-content: space-between; align="center">
 
   <img src="Image/logo_lab.png" alt="Lab's logo" width="15%" style="margin-left: 10px;">
 </div>
 
 *<div align="center">
-    By Ally Champoux, Université de Sherbrooke, 20/12/2024*
+    By Ally Champoux, Université de Sherbrooke, 20/08/2024*
 </div>
 
 <div align="center">
@@ -20,7 +20,12 @@
 <img src="Image/Output_example.svg" alt="Lab's logo" style="margin-left: 10px;">
 
 ## Installation 
-You have to clone this repository and work in the directory. It contains the following tree: 
+You first have to clone this repository
+```bash
+git clone https://github.com/allychamp/Phage_alignement_visualisation.git
+
+```
+It contains the following tree: 
 ```bash
 ├── Image
 ├── LICENSE
@@ -33,20 +38,18 @@ You have to clone this repository and work in the directory. It contains the fol
     ├── parser.py
     └── plotter.py
 ```
-You can do so by using the following command: 
-```bash
-git clone https://github.com/allychamp/Phage_alignement_visualisation.git
 
-```
+
 Note that you should have [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) or [miniconda](https://docs.anaconda.com/miniconda/) installed to run this pipeline. 
 
 The dependencies can be installed with the yaml file in this repo. This will create a conda environnement containning all the dependencies. To do so, run this command: 
 ```bash
-
+# TO BE DONE
 ```
 ## Usage
-Before launching the script, first complete the config file. 
-| Variable | Description |
+The tool takes in input a combination of a genbank file and a protein fasta file per sample (one folder per file type)
+Before launching the script, first complete the config file: 
+| Variable in config file | Description |
 |---|---|
 | `genomes_dir` | Path to a folder containing all GenBank files |
 | `faa_dir` | Path to a folder containing all protein FASTA files |
@@ -67,10 +70,10 @@ Once all the paths are set up, activate your conda environnemnt:
 conda activate name_of_your_env
 ```
 
-Then, go in the directorie containning the scripts and run the following command:
+Then, go in the directory containning the scripts and run the following command:
 ```bash
 python -m src.main
 ```
 ## Citation 
-Please keep an eye open for the preprint of this tool. In the meantime, please cite this repositorie if you use it in your work:
-Champoux, A., Jacques, P., & Fortier, L. (2026). Pipeline for phage genome analysis [Computer software]. https://github.com/allychamp/phage-genome-analysis-pipeline
+Please keep an eye open for the preprint of this tool. In the meantime, please cite this repository if you use it in your work:
+Champoux, A., Jacques, P., & Fortier, L. (2026). GeneALLYgn [Computer software]. https://github.com/allychamp/phage-genome-analysis-pipeline
