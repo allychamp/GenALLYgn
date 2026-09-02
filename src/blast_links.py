@@ -37,10 +37,6 @@ def load_blast(blast_tsv, min_identity=0, min_coverage=0):
         for i, line in enumerate(f):
             fields = line.strip().split("\t")
             
-            # Debug first line
-            if i == 0:
-                print("Number of fields:", len(fields))
-                print("First line:", fields)
             #Attribute each info to the appropriate variable
             qseqid = fields[0]
             sseqid = fields[1]
@@ -52,11 +48,11 @@ def load_blast(blast_tsv, min_identity=0, min_coverage=0):
             qcoverage = (length / qlen) * 100
             scoverage = (length / slen) * 100
 
-            # For each line if the percentage of identity is lower than the decided threshold, 
-            # this blast will be skip
+            # For each hit, if the percentage of identity or the coverage is 
+            # lower than the decided threshold, this blast will be skip
             if pident < min_identity:
                 continue
-            if qcoverage < min_coverage:  # ← use the variable, not length/qlen
+            if qcoverage < min_coverage:  
                 continue
             
             #Clean up the gene name in the file

@@ -1,9 +1,9 @@
 paths:
   #Enter the following paths: 
   #To a folder containnig all Genbank file
-  genomes_dir: "/sample_gbk/"
+  genomes_dir: "/home/champa/DATA/PHAGE_genome_analysis/Champoux_A/Analysis_05-2026/Analysis/genbank_files/"
   #To a folder containning all proteins fasta file
-  faa_dir: "/sample_faa/"
+  faa_dir: "/home/champa/DATA/PHAGE_genome_analysis/Champoux_A/Analysis_05-2026/Analysis/protein_fastafiles/"
   #To the directorie you want to save the multifasta proteins file
   all_proteins: "data/all_proteins.faa"
   #To the directorie you want to save the blast all-vs-all proteins file 
@@ -19,14 +19,13 @@ paths:
   color_table: "./function_color_mapping.csv"
 
   #Path of the desired outpuut file (including the desired extension)
-  output_svg: "./alignement.svg"
-
+  output_svg: "./test_alignement.svg"
 # Here are the blast parameters you can play with 
 blast:
   #Please select the desired minimal identity threshold (30 mean at lest 30% of 
   #the query protein is identical to the the subject, if less the link will be 
   #ignored)
-  identity_threshold: 30
+  identity_threshold: 75
   #Please select the desired coverage_threshold threshold (60 mean at lest 60% of 
   #the lenght of the query protein can be align with the subject, if less the 
   #link will be ignored)
@@ -34,7 +33,6 @@ blast:
   #Ajdst the number of threads available for this task (the more there is, the 
   #faster the analysis will be)
   num_threads: 1
-
 #Here are the parameters for the plotting function
 plot:
   #Adjust the space between genomes
@@ -43,6 +41,22 @@ plot:
   label_width: 25
   #Specify in which order you want the genomes (as to be the same as the 
   #file name) if not specifie, genomes will be order by similarity
-  genome_order:
-    - "genome1"
-    - "genome2"
+  # genome_order:
+  #   - "genome1"
+  #   - "genome2"
+  font_scale: 1.5       # multiplies every size below
+  fonts:
+    genome_name: 15     # names beside each genome line
+    tree_label: 14      # names at the branch tips
+    tree_title: 16      # "Tree"
+    tree_axis: 12       # distance scale under the tree
+    position_axis: 14   # "Position (bp)" and its ticks
+    colorbar: 14       # "Identity (%)" and its ticks
+    legend: 15          # gene function entries
+    legend_title: 17    # "Gene function"
+
+  legend_wrap: 25       # chars before a legend entry wraps
+
+  show_tree_labels: false
+  show_genome_names: true
+  min_branch_display: 0.02

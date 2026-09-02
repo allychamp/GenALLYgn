@@ -1,26 +1,29 @@
+import glob
+import os
+import subprocess
+import textwrap
+
 import pandas as pd
+import yaml
+
 from src.blast_links import load_blast
 from src.parser import parse_genbank
 from src.plotter import plot_genomes
-from collections import defaultdict
-import textwrap
-import glob
-import os
-import yaml
-import subprocess
+from src.distance import compute_genome_tree
 
 with open("config.yaml") as f:
     config = yaml.safe_load(f)
 
 # Paramètres
 IDENTITY_THRESHOLD = config["blast"]["identity_threshold"]
-#Use function define in blast_link
 COVERAGE_THRESHOLD = config["blast"]["coverage_threshold"]
 
 
 # 1. Concatenate all protein fasta files
 print("Step 1: Concatenating protein fasta files...")
 faa_files = glob.glob(f"{config['paths']['faa_dir']}*.faa")
+if not faa_files:
+    faa_files = glob.glob(f"{config['paths']['faa_dir']}*.fasta")
 with open(config["paths"]["all_proteins"], "w") as outfile:
     for faa in faa_files:
         with open(faa) as infile:
@@ -47,208 +50,138 @@ subprocess.run([
 ], check=True)
 
 
-# Load gene color lookup
+# 4. Load gene colour lookup
 cds_df = pd.read_csv(config["paths"]["cds_table"])
 color_df = pd.read_csv(config["paths"]["color_table"])
 
-# Strip Pharokka_ prefix to match your locus tags
+# Strip Pharokka_ prefix to match the locus tags used everywhere else
 cds_df["gene"] = cds_df["gene"].str.removeprefix("Pharokka_")
 
-# Merge to get gene -> color
 merged = cds_df.merge(color_df, left_on="category", right_on="function", how="left")
 gene_color_map = dict(zip(merged["gene"], merged["color"]))
 
-def order_genomes_by_similarity(genomes, genome_links):
-    """
-    A function to class genomes by similarity to display the closest together in the graph 
-    genomes: a list of genome objects
-    genome_links: a list of (gene1, gene2, identity) tuples representing connections between genes from different genomes, with a similarity score
-    """
-    #Defying two dictionnaries to store the sum of each similarity score for each genome pair (pair_scores) and 
-    #how many links exist between each pair (pair_counts)
-    pair_scores = defaultdict(float)
-    pair_counts = defaultdict(int)
 
-    #Iterating over every connections between genomes
-    for gene1, gene2, identity in genome_links:
-        #Creating pairs of each genome combination
-        key = tuple(sorted([gene1.genome.name, gene2.genome.name]))
-        # Sum gene identity into the pair_score value associated with the key (genome pair)
-        pair_scores[key] += identity
-        # Add one the the count of gene links (value) between the key (genome pair)
-        pair_counts[key] += 1
-    #Then the pair score becomes the average of similarity of all genes in the key (genome pair)
-    for key in pair_scores:
-        pair_scores[key] /= pair_counts[key]
-
-    if not pair_scores:
-        print("WARNING: no pairs found, keeping original order")
-        return genomes
-    #Extracting in genome_names variable just the name strings from the genome objects
-    genome_names = [g.name for g in genomes]
-    #Finding the genome pair with the highest average similarity and uses them as the starting two elements of the chain.
-    #This chain will contain all the genomes names in the right order. The genomes not in the ''best_pair'' will be store
-    # in the remaining variable. 
-    best_pair = max(pair_scores, key=pair_scores.get)
-    chain = list(best_pair)
-    remaining = [n for n in genome_names if n not in chain]
-
-    #The loop will continue until until all remainning has been placed in the chain
-    while remaining:
-        best_score = -1
-        best_genome = None
-        best_end = None
-    #Checking how similar the next genome in remainning is to the left end of the chain. 
-    # Uses 0 if no link exists between them.
-        for name in remaining:
-            left_key = tuple(sorted([chain[0], name]))
-            left_score = pair_scores.get(left_key, 0)
-            #Same for the right end of the chain
-            right_key = tuple(sorted([chain[-1], name]))
-            right_score = pair_scores.get(right_key, 0)
-        #If the similarity is higher than previous matches, the new match will replace the best candidates will be updated
-            if left_score > best_score:
-                best_score = left_score
-                best_genome = name
-                best_end = "left"
-            if right_score > best_score:
-                best_score = right_score
-                best_genome = name
-                best_end = "right"
-
-        if best_end == "left":
-            chain.insert(0, best_genome)
-        else:
-            chain.append(best_genome)
-        remaining.remove(best_genome)
-#Place the name back into a dictionnary
-    name_to_genome = {g.name: g for g in genomes}
-    return [name_to_genome[name] for name in chain] 
-
-#Use the function create in the parser.py to return genomes object 
+# 5. Parse the genomes
 genomes = []
-# Iterates over all the gbk in genomes file
-
-for gbk in glob.glob(f"{config['paths']['genomes_dir']}*.gbk"):
+for gbk in sorted(glob.glob(f"{config['paths']['genomes_dir']}*.gbk")):
     parsed = parse_genbank(gbk)
-    #Attributing the file name as genome's name
-    fname = os.path.basename(gbk).replace('.gbk', '')
+    fname = os.path.basename(gbk).replace(".gbk", "")
 
-    # For every gene inside this genome, setting the genome attributes of the gene object (define in parser)
-    for g in parsed:
-        g.name = fname
+    for i, g in enumerate(parsed):
+        # One record per file is the normal case. If a file holds several, keep
+        # the record name as a suffix so two genome objects never share a name:
+        # the tree labels and the genome_y lookup in the plotter both key on it.
+        g.name = fname if len(parsed) == 1 else f"{fname}_{g.name}"
         for gene in g.genes:
-            gene.genome = g 
-        genomes.append(g)  
+            gene.genome = g
+        genomes.append(g)
+
+print("Genomes parsed:", len(genomes))
 
 
-# gene_lookup = {}
-
-# for genome in genomes:
-#     for gene in genome.genes:
-#         gene_lookup[gene.locus_tag] = gene
-
-# print("Nombre de gènes :", len(gene_lookup))
-
-
-
+# 6. Load BLAST hits
 links = load_blast(
     config["paths"]["blast_file"],
     min_identity=IDENTITY_THRESHOLD,
     min_coverage=COVERAGE_THRESHOLD
 )
 print("Total links loaded:", len(links))
-print("Thresholds - identity:", IDENTITY_THRESHOLD, "coverage:", COVERAGE_THRESHOLD)
+print("Thresholds — identity:", IDENTITY_THRESHOLD, "coverage:", COVERAGE_THRESHOLD)
 
-# Check if blast file exists and has content
-import os
-print("BLAST file exists:", os.path.exists(config["paths"]["blast_file"]))
-print("BLAST file size:", os.path.getsize(config["paths"]["blast_file"]))
 
-# for tag in list(gene_lookup.keys())[:5]:
-#     print(f"  {tag}")
-# print("Nombre de hits BLAST :", len(links))
-# print("Sample locus tags:", list(gene_lookup.keys())[:5])
-# print("Sample BLAST IDs:", [links[i].qseqid for i in range(5)])
+# 7. Build the distance matrix and the tree.
+# genome_names / distance_matrix / peq_matrix stay in the ORIGINAL genome order.
+# Only `genomes` comes back permuted into plot order (bottom to top).
+(genomes, linkage_matrix, distance_matrix, peq_matrix,
+ genome_names) = compute_genome_tree(
+    genomes, links,
+    # Snap distances at or below this to exactly 0, so identical genomes join
+    # as a flat line instead of a small bracket. Set to 0.0 to disable.
+    zero_tolerance=config["plot"].get("zero_tolerance", 1e-3),
+)
 
-#Creating a dictionnary (gene_index) to map each gene with the appropriate genomes (could probably have been done with the attributes, tcheck that later)
+
+# 8. Map each gene to its genome
 gene_index = {}
 for genome in genomes:
     for gene in genome.genes:
         gene_index[gene.locus_tag] = (genome, gene)
-print("gene_index sample:", list(gene_index.keys())[:3])
-all_genome_links = []
-for hit in links:
-    #Make sure to only keep hits in gbk and blast 
-    if hit.qseqid not in gene_index or hit.sseqid not in gene_index:
-        continue
-    #g1 is defined as genome of the query gene (gene1), g2 is defined as genome of the subject gene (g2)
-    g1, gene1 = gene_index[hit.qseqid]
-    g2, gene2 = gene_index[hit.sseqid]
-    #Remove self hit (as precaution because thechnically is as already be removed)
-    if g1 == g2:
-        continue
-    all_genome_links.append((gene1, gene2, hit.identity))
 
-#Using function defined earlier to obtain the order genomes should appear in plot
-genomes = order_genomes_by_similarity(genomes, all_genome_links)
 
+# 9. Optional manual override of the row order.
+# This breaks the correspondence between the tree and the rows, so drop the
+# tree rather than draw one that contradicts the layout.
 genome_order = config["plot"].get("genome_order", None)
 if genome_order:
     name_to_genome = {g.name: g for g in genomes}
-    genomes = [name_to_genome[name] for name in genome_order if name in name_to_genome]
-# Making set of adjacent genome only
-adjacent_pairs = set()
-for i in range(len(genomes) - 1):
-    pair = tuple(sorted([genomes[i].name, genomes[i+1].name]))
-    adjacent_pairs.add(pair)
+    missing = [n for n in genome_order if n not in name_to_genome]
+    if missing:
+        print("WARNING: genome_order names not found and skipped:", missing)
+    dropped = [g.name for g in genomes if g.name not in set(genome_order)]
+    if dropped:
+        print("WARNING: genomes absent from genome_order and skipped:", dropped)
 
-#Finding best hit in adjacent genomes only. Best hits will be stored in a dictionnary
+    genomes = [name_to_genome[name] for name in genome_order if name in name_to_genome]
+    print("Manual genome_order in use — dendrogram disabled.")
+    linkage_matrix = None
+
+
+# 10. Best hit per gene per target genome
 best_hits = {}
-#Iterating trought blast results (again)
 for hit in links:
     if hit.qseqid not in gene_index or hit.sseqid not in gene_index:
         continue
     g1, gene1 = gene_index[hit.qseqid]
     g2, gene2 = gene_index[hit.sseqid]
-    if g1 == g2:
+    if g1 is g2:
         continue
-    pair = tuple(sorted([g1.name, g2.name]))
-    #Keeping only the hit that are between genomes in adjacent_pairs set
-    if pair not in adjacent_pairs:
-        continue
-    # Key is (query_gene, adjacent_genome) to get best hit per neighbor
     key = (hit.qseqid, g2.name)
-    #Updating key to only keep the best hit
     if key not in best_hits or hit.identity > best_hits[key].identity:
         best_hits[key] = hit
 
-# Converting the best hit into visual links on the figure
+# Convert to genome_links — the plotter filters these down to adjacent rows
 genome_links = []
 for hit in best_hits.values():
     g1, gene1 = gene_index[hit.qseqid]
     g2, gene2 = gene_index[hit.sseqid]
     genome_links.append((gene1, gene2, hit.identity))
-
 print("Nombre de liens tracés :", len(genome_links))
 
-# Assuring that all genomes start at 0
+
+# 11. Make every genome start at 0
 for genome in genomes:
     genome.start = 0
     genome.end = genome.length
 
-# Plotting the figure with the function define in the plotter.py
 
+# 12. Plot
 function_color_map = {
-    textwrap.fill(func.capitalize(), width=25): color
+    textwrap.fill(func.capitalize(), width=config["plot"].get("legend_wrap", 25)): color
     for func, color in sorted(
         zip(color_df["function"], color_df["color"]),
         key=lambda x: x[0].lower()
     )
 }
 
-plot_genomes(genomes, genome_links, config["paths"]["output_svg"],
-             identity_threshold=IDENTITY_THRESHOLD,
-             gene_color_map=gene_color_map,
-             function_color_map=function_color_map,
-             spacing=config["plot"]["spacing"])
+plot_cfg = config["plot"]
+
+plot_genomes(
+    genomes,
+    genome_links,
+    config["paths"]["output_svg"],
+    identity_threshold=IDENTITY_THRESHOLD,
+    gene_color_map=gene_color_map,
+    function_color_map=function_color_map,
+    spacing=plot_cfg["spacing"],
+    linkage_matrix=linkage_matrix,
+    # Original matrix order, NOT the reordered `genomes` list. scipy applies the
+    # leaf permutation to `labels` itself.
+    tree_labels=genome_names if linkage_matrix is not None else None,
+    show_tree_labels=plot_cfg.get("show_tree_labels", True),
+    show_genome_names=plot_cfg.get("show_genome_names", True),
+    min_branch_display=plot_cfg.get("min_branch_display", 0.02),
+    font_scale=plot_cfg.get("font_scale", 1.0),
+    font_sizes=plot_cfg.get("fonts", None),
+    tree_gap=plot_cfg.get("tree_gap", None),
+)
+print("Wrote", config["paths"]["output_svg"])

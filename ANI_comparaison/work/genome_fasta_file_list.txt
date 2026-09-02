@@ -1,0 +1,12 @@
+/home/champa/DATA/PHAGE_genome_analysis/Champoux_A/Analysis_05-2026/Analysis/Dnaapler_reoriented_fasta/MA001.fasta
+/home/champa/DATA/PHAGE_genome_analysis/Champoux_A/Analysis_05-2026/Analysis/Dnaapler_reoriented_fasta/MA002.fasta
+/home/champa/DATA/PHAGE_genome_analysis/Champoux_A/Analysis_05-2026/Analysis/Dnaapler_reoriented_fasta/6A.fasta
+/home/champa/DATA/PHAGE_genome_analysis/Champoux_A/Analysis_05-2026/Analysis/Dnaapler_reoriented_fasta/12.fasta
+/home/champa/DATA/PHAGE_genome_analysis/Champoux_A/Analysis_05-2026/Analysis/Dnaapler_reoriented_fasta/PV_15_dnaapler_reoriented.fasta
+/home/champa/DATA/PHAGE_genome_analysis/Champoux_A/Analysis_05-2026/Analysis/Dnaapler_reoriented_fasta/11.fasta
+/home/champa/DATA/PHAGE_genome_analysis/Champoux_A/Analysis_05-2026/Analysis/Dnaapler_reoriented_fasta/PV_8_dnaapler_reoriented.fasta
+/home/champa/DATA/PHAGE_genome_analysis/Champoux_A/Analysis_05-2026/Analysis/Dnaapler_reoriented_fasta/7A.fasta
+/home/champa/DATA/PHAGE_genome_analysis/Champoux_A/Analysis_05-2026/Analysis/Dnaapler_reoriented_fasta/PV_10_dnaapler_reoriented.fasta
+/home/champa/DATA/PHAGE_genome_analysis/Champoux_A/Analysis_05-2026/Analysis/Dnaapler_reoriented_fasta/PV_11_dnaapler_reoriented.fasta
+/home/champa/DATA/PHAGE_genome_analysis/Champoux_A/Analysis_05-2026/Analysis/Dnaapler_reoriented_fasta/MA004.fasta
+/home/champa/DATA/PHAGE_genome_analysis/Champoux_A/Analysis_05-2026/Analysis/Dnaapler_reoriented_fasta/7BP.fasta

@@ -1,7 +1,8 @@
 # src/parser.py
 from Bio import SeqIO
 
-# Define Genome class. Definition of the BlastHit class. Using the __init()__ built-in method to initiate the class. That way I can assign values to object properties. 
+# Define Genome class. Definition of the BlastHit class. Using the __init()__ 
+# built-in method to initiate the class. That way I can assign values to object properties. 
 # That class will contain the information about the genome.
     #Name: Genome's name
     #Lenght: Genome's lenght
@@ -12,30 +13,35 @@ class Genome:
         self.length = length
         self.genes = genes
 
-# Define the Gene class. Using the __init()__ built-in method to initiate the class. That way I can assign values to object properties. 
-# That class will contain the information about the gene.
-    #Start: first coordonate of the gene
-    #End : Last coordonate of the gene 
+# Define the Gene class. Using the __init()__ built-in method to initiate the class.
+# That way I can assign values to object properties. That class will contain the 
+# information about the gene.
+    #start: first coordonate of the gene
+    #end : Last coordonate of the gene 
+    #strand: strand on which eahc gene is identified (usefull for arrow orientation)
     #locus: Locus on which the gene is 
+    #function: function attribute to the gene 
 class Gene:
     def __init__(self, start, end, strand, locus, function):
         self.start = start
         self.end = end
         self.strand = strand
         self.locus_tag = locus
-        self.function = function    
-        # Return a printable representation of the object
-    def __repr__(self):
-        return f"Gene({self.locus_tag}, {self.start}-{self.end}, strand={self.strand})"
+        self.function = function  
+        self.length = abs(end - start)  
+    #     # Return a printable representation of the object
+    # def __repr__(self):
+    #     return f"Gene({self.locus_tag}, {self.start}-{self.end}, strand={self.strand})"
        
 #Define a function 
 def parse_genbank(gbk_file):
     """
-    
+    Uses GenBank info to create the genome's class
+    Output a list with all the genome objects 
     """
-    #Create an empty list. That list will contain all the genomes 
+    #Create an empty list. This list will contain all the genomes 
     genomes = []
-    # Iterate over all the gbk file 
+    # Iterate over all the gbk files
     for record in SeqIO.parse(gbk_file, "genbank"):
         # genes = []
         #Each gbk file will be attribute to a genome object. Using the Seqrecord object created with SeqIO.parse, we are able the recovert 
@@ -45,7 +51,7 @@ def parse_genbank(gbk_file):
             length=len(record.seq),
             genes=[]
         )
-        # Iterate over all the features which is another list property, and it contains SeqFeature objects
+        # Iterate over all the features to extract properties
         for feature in record.features:
         
             #For all CDS the gene coordinate will be extract and put in the gene list, as well as the strand on which the gene is

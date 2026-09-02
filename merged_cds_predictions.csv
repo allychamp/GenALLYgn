@@ -1,0 +1,878 @@
+gene,category
+Pharokka_phi6A_CDS_0001,head and packaging
+Pharokka_phi6A_CDS_0002,head and packaging
+Pharokka_phi6A_CDS_0003,head and packaging
+Pharokka_phi6A_CDS_0004,unknown function
+Pharokka_phi6A_CDS_0005,head and packaging
+Pharokka_phi6A_CDS_0006,head and packaging
+Pharokka_phi6A_CDS_0007,unknown function
+Pharokka_phi6A_CDS_0008,unknown function
+Pharokka_phi6A_CDS_0009,unknown function
+Pharokka_phi6A_CDS_0010,tail
+Pharokka_phi6A_CDS_0011,unknown function
+Pharokka_phi6A_CDS_0012,unknown function
+Pharokka_phi6A_CDS_0013,head and packaging
+Pharokka_phi6A_CDS_0014,tail
+Pharokka_phi6A_CDS_0015,unknown function
+Pharokka_phi6A_CDS_0016,tail
+Pharokka_phi6A_CDS_0017,unknown function
+Pharokka_phi6A_CDS_0018,unknown function
+Pharokka_phi6A_CDS_0019,unknown function
+Pharokka_phi6A_CDS_0020,unknown function
+Pharokka_phi6A_CDS_0021,unknown function
+Pharokka_phi6A_CDS_0022,unknown function
+Pharokka_phi6A_CDS_0023,unknown function
+Pharokka_phi6A_CDS_0024,unknown function
+Pharokka_phi6A_CDS_0025,unknown function
+Pharokka_phi6A_CDS_0026,unknown function
+Pharokka_phi6A_CDS_0027,unknown function
+Pharokka_phi6A_CDS_0028,unknown function
+Pharokka_phi6A_CDS_0029,"DNA, RNA and nucleotide metabolism"
+Pharokka_phi6A_CDS_0030,unknown function
+Pharokka_phi6A_CDS_0031,"DNA, RNA and nucleotide metabolism"
+Pharokka_phi6A_CDS_0032,"DNA, RNA and nucleotide metabolism"
+Pharokka_phi6A_CDS_0033,"DNA, RNA and nucleotide metabolism"
+Pharokka_phi6A_CDS_0034,unknown function
+Pharokka_phi6A_CDS_0035,"DNA, RNA and nucleotide metabolism"
+Pharokka_phi6A_CDS_0036,"DNA, RNA and nucleotide metabolism"
+Pharokka_phi6A_CDS_0037,unknown function
+Pharokka_phi6A_CDS_0038,unknown function
+Pharokka_phi6A_CDS_0039,"moron, auxiliary metabolic gene and host takeover"
+Pharokka_phi6A_CDS_0040,other
+Pharokka_phi6A_CDS_0041,"DNA, RNA and nucleotide metabolism"
+Pharokka_phi6A_CDS_0042,unknown function
+Pharokka_phi6A_CDS_0043,"DNA, RNA and nucleotide metabolism"
+Pharokka_phi6A_CDS_0044,unknown function
+Pharokka_phi6A_CDS_0045,unknown function
+Pharokka_phi6A_CDS_0046,unknown function
+Pharokka_phi6A_CDS_0047,"DNA, RNA and nucleotide metabolism"
+Pharokka_phi6A_CDS_0048,unknown function
+Pharokka_phi6A_CDS_0049,unknown function
+Pharokka_phi6A_CDS_0050,unknown function
+Pharokka_phi6A_CDS_0051,lysis
+Pharokka_phi6A_CDS_0052,unknown function
+Pharokka_phi6A_CDS_0053,unknown function
+Pharokka_phi6A_CDS_0054,unknown function
+Pharokka_phi6A_CDS_0055,unknown function
+Pharokka_phi6A_CDS_0056,unknown function
+Pharokka_phi6A_CDS_0057,unknown function
+Pharokka_phi6A_CDS_0058,unknown function
+Pharokka_phi6A_CDS_0059,unknown function
+Pharokka_phi6A_CDS_0060,unknown function
+Pharokka_phi6A_CDS_0061,unknown function
+Pharokka_phi6A_CDS_0062,unknown function
+Pharokka_phi6A_CDS_0063,unknown function
+Pharokka_phi6A_CDS_0064,unknown function
+Pharokka_phi6A_CDS_0065,unknown function
+Pharokka_phi6A_CDS_0066,unknown function
+Pharokka_phi6A_CDS_0067,unknown function
+Pharokka_phi6A_CDS_0068,unknown function
+Pharokka_phi6A_CDS_0069,unknown function
+Pharokka_phi6A_CDS_0070,"DNA, RNA and nucleotide metabolism"
+Pharokka_phi11_CDS_0001,head and packaging
+Pharokka_phi11_CDS_0002,head and packaging
+Pharokka_phi11_CDS_0003,head and packaging
+Pharokka_phi11_CDS_0004,unknown function
+Pharokka_phi11_CDS_0005,head and packaging
+Pharokka_phi11_CDS_0006,head and packaging
+Pharokka_phi11_CDS_0007,unknown function
+Pharokka_phi11_CDS_0008,unknown function
+Pharokka_phi11_CDS_0009,unknown function
+Pharokka_phi11_CDS_0010,tail
+Pharokka_phi11_CDS_0011,unknown function
+Pharokka_phi11_CDS_0012,unknown function
+Pharokka_phi11_CDS_0013,head and packaging
+Pharokka_phi11_CDS_0014,tail
+Pharokka_phi11_CDS_0015,unknown function
+Pharokka_phi11_CDS_0016,tail
+Pharokka_phi11_CDS_0017,unknown function
+Pharokka_phi11_CDS_0018,unknown function
+Pharokka_phi11_CDS_0019,unknown function
+Pharokka_phi11_CDS_0020,unknown function
+Pharokka_phi11_CDS_0021,unknown function
+Pharokka_phi11_CDS_0022,unknown function
+Pharokka_phi11_CDS_0023,unknown function
+Pharokka_phi11_CDS_0024,unknown function
+Pharokka_phi11_CDS_0025,unknown function
+Pharokka_phi11_CDS_0026,unknown function
+Pharokka_phi11_CDS_0027,unknown function
+Pharokka_phi11_CDS_0028,unknown function
+Pharokka_phi11_CDS_0029,unknown function
+Pharokka_phi11_CDS_0030,unknown function
+Pharokka_phi11_CDS_0031,"DNA, RNA and nucleotide metabolism"
+Pharokka_phi11_CDS_0032,unknown function
+Pharokka_phi11_CDS_0033,"DNA, RNA and nucleotide metabolism"
+Pharokka_phi11_CDS_0034,"DNA, RNA and nucleotide metabolism"
+Pharokka_phi11_CDS_0035,"DNA, RNA and nucleotide metabolism"
+Pharokka_phi11_CDS_0036,unknown function
+Pharokka_phi11_CDS_0037,"DNA, RNA and nucleotide metabolism"
+Pharokka_phi11_CDS_0038,"DNA, RNA and nucleotide metabolism"
+Pharokka_phi11_CDS_0039,unknown function
+Pharokka_phi11_CDS_0040,unknown function
+Pharokka_phi11_CDS_0041,"moron, auxiliary metabolic gene and host takeover"
+Pharokka_phi11_CDS_0042,other
+Pharokka_phi11_CDS_0043,"DNA, RNA and nucleotide metabolism"
+Pharokka_phi11_CDS_0044,unknown function
+Pharokka_phi11_CDS_0045,"DNA, RNA and nucleotide metabolism"
+Pharokka_phi11_CDS_0046,unknown function
+Pharokka_phi11_CDS_0047,"DNA, RNA and nucleotide metabolism"
+Pharokka_phi11_CDS_0048,unknown function
+Pharokka_phi11_CDS_0049,unknown function
+Pharokka_phi11_CDS_0050,unknown function
+Pharokka_phi11_CDS_0051,lysis
+Pharokka_phi11_CDS_0052,unknown function
+Pharokka_phi11_CDS_0053,unknown function
+Pharokka_phi11_CDS_0054,unknown function
+Pharokka_phi11_CDS_0055,unknown function
+Pharokka_phi11_CDS_0056,unknown function
+Pharokka_phi11_CDS_0057,unknown function
+Pharokka_phi11_CDS_0058,unknown function
+Pharokka_phi11_CDS_0059,unknown function
+Pharokka_phi11_CDS_0060,unknown function
+Pharokka_phi11_CDS_0061,unknown function
+Pharokka_phi11_CDS_0062,unknown function
+Pharokka_phi11_CDS_0063,unknown function
+Pharokka_phi11_CDS_0064,unknown function
+Pharokka_phi11_CDS_0065,unknown function
+Pharokka_phi11_CDS_0066,unknown function
+Pharokka_phi11_CDS_0067,unknown function
+Pharokka_phi11_CDS_0068,unknown function
+Pharokka_phi11_CDS_0069,unknown function
+Pharokka_phi11_CDS_0070,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_10_CDS_0001,head and packaging
+Pharokka_PV_10_CDS_0002,head and packaging
+Pharokka_PV_10_CDS_0003,head and packaging
+Pharokka_PV_10_CDS_0004,head and packaging
+Pharokka_PV_10_CDS_0005,head and packaging
+Pharokka_PV_10_CDS_0006,head and packaging
+Pharokka_PV_10_CDS_0007,unknown function
+Pharokka_PV_10_CDS_0008,unknown function
+Pharokka_PV_10_CDS_0009,unknown function
+Pharokka_PV_10_CDS_0010,tail
+Pharokka_PV_10_CDS_0011,unknown function
+Pharokka_PV_10_CDS_0012,unknown function
+Pharokka_PV_10_CDS_0013,head and packaging
+Pharokka_PV_10_CDS_0014,tail
+Pharokka_PV_10_CDS_0015,unknown function
+Pharokka_PV_10_CDS_0016,tail
+Pharokka_PV_10_CDS_0017,unknown function
+Pharokka_PV_10_CDS_0018,unknown function
+Pharokka_PV_10_CDS_0019,unknown function
+Pharokka_PV_10_CDS_0020,unknown function
+Pharokka_PV_10_CDS_0021,unknown function
+Pharokka_PV_10_CDS_0022,unknown function
+Pharokka_PV_10_CDS_0023,unknown function
+Pharokka_PV_10_CDS_0024,unknown function
+Pharokka_PV_10_CDS_0025,unknown function
+Pharokka_PV_10_CDS_0026,unknown function
+Pharokka_PV_10_CDS_0027,unknown function
+Pharokka_PV_10_CDS_0028,unknown function
+Pharokka_PV_10_CDS_0029,unknown function
+Pharokka_PV_10_CDS_0030,unknown function
+Pharokka_PV_10_CDS_0031,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_10_CDS_0032,unknown function
+Pharokka_PV_10_CDS_0033,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_10_CDS_0034,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_10_CDS_0035,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_10_CDS_0036,unknown function
+Pharokka_PV_10_CDS_0037,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_10_CDS_0038,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_10_CDS_0039,unknown function
+Pharokka_PV_10_CDS_0040,unknown function
+Pharokka_PV_10_CDS_0041,"moron, auxiliary metabolic gene and host takeover"
+Pharokka_PV_10_CDS_0042,other
+Pharokka_PV_10_CDS_0043,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_10_CDS_0044,unknown function
+Pharokka_PV_10_CDS_0045,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_10_CDS_0046,unknown function
+Pharokka_PV_10_CDS_0047,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_10_CDS_0048,unknown function
+Pharokka_PV_10_CDS_0049,unknown function
+Pharokka_PV_10_CDS_0050,unknown function
+Pharokka_PV_10_CDS_0051,lysis
+Pharokka_PV_10_CDS_0052,unknown function
+Pharokka_PV_10_CDS_0053,unknown function
+Pharokka_PV_10_CDS_0054,unknown function
+Pharokka_PV_10_CDS_0055,unknown function
+Pharokka_PV_10_CDS_0056,unknown function
+Pharokka_PV_10_CDS_0057,unknown function
+Pharokka_PV_10_CDS_0058,unknown function
+Pharokka_PV_10_CDS_0059,unknown function
+Pharokka_PV_10_CDS_0060,unknown function
+Pharokka_PV_10_CDS_0061,unknown function
+Pharokka_PV_10_CDS_0062,unknown function
+Pharokka_PV_10_CDS_0063,unknown function
+Pharokka_PV_10_CDS_0064,unknown function
+Pharokka_PV_10_CDS_0065,unknown function
+Pharokka_PV_10_CDS_0066,unknown function
+Pharokka_PV_10_CDS_0067,unknown function
+Pharokka_PV_10_CDS_0068,unknown function
+Pharokka_PV_10_CDS_0069,unknown function
+Pharokka_PV_10_CDS_0070,"DNA, RNA and nucleotide metabolism"
+Pharokka_phiMA004_CDS_0001,head and packaging
+Pharokka_phiMA004_CDS_0002,head and packaging
+Pharokka_phiMA004_CDS_0003,head and packaging
+Pharokka_phiMA004_CDS_0004,unknown function
+Pharokka_phiMA004_CDS_0005,head and packaging
+Pharokka_phiMA004_CDS_0006,head and packaging
+Pharokka_phiMA004_CDS_0007,unknown function
+Pharokka_phiMA004_CDS_0008,unknown function
+Pharokka_phiMA004_CDS_0009,tail
+Pharokka_phiMA004_CDS_0010,unknown function
+Pharokka_phiMA004_CDS_0011,unknown function
+Pharokka_phiMA004_CDS_0012,head and packaging
+Pharokka_phiMA004_CDS_0013,tail
+Pharokka_phiMA004_CDS_0014,unknown function
+Pharokka_phiMA004_CDS_0015,tail
+Pharokka_phiMA004_CDS_0016,unknown function
+Pharokka_phiMA004_CDS_0017,unknown function
+Pharokka_phiMA004_CDS_0018,unknown function
+Pharokka_phiMA004_CDS_0019,unknown function
+Pharokka_phiMA004_CDS_0020,unknown function
+Pharokka_phiMA004_CDS_0021,unknown function
+Pharokka_phiMA004_CDS_0022,unknown function
+Pharokka_phiMA004_CDS_0023,unknown function
+Pharokka_phiMA004_CDS_0024,unknown function
+Pharokka_phiMA004_CDS_0025,unknown function
+Pharokka_phiMA004_CDS_0026,unknown function
+Pharokka_phiMA004_CDS_0027,unknown function
+Pharokka_phiMA004_CDS_0028,unknown function
+Pharokka_phiMA004_CDS_0029,unknown function
+Pharokka_phiMA004_CDS_0030,unknown function
+Pharokka_phiMA004_CDS_0031,unknown function
+Pharokka_phiMA004_CDS_0032,unknown function
+Pharokka_phiMA004_CDS_0033,unknown function
+Pharokka_phiMA004_CDS_0034,unknown function
+Pharokka_phiMA004_CDS_0035,"DNA, RNA and nucleotide metabolism"
+Pharokka_phiMA004_CDS_0036,unknown function
+Pharokka_phiMA004_CDS_0037,"DNA, RNA and nucleotide metabolism"
+Pharokka_phiMA004_CDS_0038,"DNA, RNA and nucleotide metabolism"
+Pharokka_phiMA004_CDS_0039,"DNA, RNA and nucleotide metabolism"
+Pharokka_phiMA004_CDS_0040,unknown function
+Pharokka_phiMA004_CDS_0041,"DNA, RNA and nucleotide metabolism"
+Pharokka_phiMA004_CDS_0042,"DNA, RNA and nucleotide metabolism"
+Pharokka_phiMA004_CDS_0043,unknown function
+Pharokka_phiMA004_CDS_0044,unknown function
+Pharokka_phiMA004_CDS_0045,"moron, auxiliary metabolic gene and host takeover"
+Pharokka_phiMA004_CDS_0046,other
+Pharokka_phiMA004_CDS_0047,"DNA, RNA and nucleotide metabolism"
+Pharokka_phiMA004_CDS_0048,unknown function
+Pharokka_phiMA004_CDS_0049,"DNA, RNA and nucleotide metabolism"
+Pharokka_phiMA004_CDS_0050,unknown function
+Pharokka_phiMA004_CDS_0051,"DNA, RNA and nucleotide metabolism"
+Pharokka_phiMA004_CDS_0052,unknown function
+Pharokka_phiMA004_CDS_0053,unknown function
+Pharokka_phiMA004_CDS_0054,unknown function
+Pharokka_phiMA004_CDS_0055,lysis
+Pharokka_phiMA004_CDS_0056,unknown function
+Pharokka_phiMA004_CDS_0057,unknown function
+Pharokka_phiMA004_CDS_0058,unknown function
+Pharokka_phiMA004_CDS_0059,unknown function
+Pharokka_phiMA004_CDS_0060,unknown function
+Pharokka_phiMA004_CDS_0061,unknown function
+Pharokka_phiMA004_CDS_0062,unknown function
+Pharokka_phiMA004_CDS_0063,unknown function
+Pharokka_phiMA004_CDS_0064,unknown function
+Pharokka_phiMA004_CDS_0065,unknown function
+Pharokka_phiMA004_CDS_0066,unknown function
+Pharokka_phiMA004_CDS_0067,unknown function
+Pharokka_phiMA004_CDS_0068,unknown function
+Pharokka_phiMA004_CDS_0069,unknown function
+Pharokka_phiMA004_CDS_0070,unknown function
+Pharokka_phiMA004_CDS_0071,unknown function
+Pharokka_phiMA004_CDS_0072,unknown function
+Pharokka_phiMA004_CDS_0073,unknown function
+Pharokka_phiMA004_CDS_0074,unknown function
+Pharokka_phiMA004_CDS_0075,unknown function
+Pharokka_phiMA004_CDS_0076,unknown function
+Pharokka_phiMA004_CDS_0077,"DNA, RNA and nucleotide metabolism"
+Pharokka_phiMA002_CDS_0001,head and packaging
+Pharokka_phiMA002_CDS_0002,head and packaging
+Pharokka_phiMA002_CDS_0003,head and packaging
+Pharokka_phiMA002_CDS_0004,unknown function
+Pharokka_phiMA002_CDS_0005,head and packaging
+Pharokka_phiMA002_CDS_0006,head and packaging
+Pharokka_phiMA002_CDS_0007,unknown function
+Pharokka_phiMA002_CDS_0008,unknown function
+Pharokka_phiMA002_CDS_0009,tail
+Pharokka_phiMA002_CDS_0010,unknown function
+Pharokka_phiMA002_CDS_0011,unknown function
+Pharokka_phiMA002_CDS_0012,head and packaging
+Pharokka_phiMA002_CDS_0013,tail
+Pharokka_phiMA002_CDS_0014,unknown function
+Pharokka_phiMA002_CDS_0015,tail
+Pharokka_phiMA002_CDS_0016,unknown function
+Pharokka_phiMA002_CDS_0017,unknown function
+Pharokka_phiMA002_CDS_0018,unknown function
+Pharokka_phiMA002_CDS_0019,unknown function
+Pharokka_phiMA002_CDS_0020,unknown function
+Pharokka_phiMA002_CDS_0021,unknown function
+Pharokka_phiMA002_CDS_0022,unknown function
+Pharokka_phiMA002_CDS_0023,unknown function
+Pharokka_phiMA002_CDS_0024,unknown function
+Pharokka_phiMA002_CDS_0025,unknown function
+Pharokka_phiMA002_CDS_0026,unknown function
+Pharokka_phiMA002_CDS_0027,unknown function
+Pharokka_phiMA002_CDS_0028,unknown function
+Pharokka_phiMA002_CDS_0029,unknown function
+Pharokka_phiMA002_CDS_0030,unknown function
+Pharokka_phiMA002_CDS_0031,unknown function
+Pharokka_phiMA002_CDS_0032,unknown function
+Pharokka_phiMA002_CDS_0033,unknown function
+Pharokka_phiMA002_CDS_0034,unknown function
+Pharokka_phiMA002_CDS_0035,"DNA, RNA and nucleotide metabolism"
+Pharokka_phiMA002_CDS_0036,unknown function
+Pharokka_phiMA002_CDS_0037,"DNA, RNA and nucleotide metabolism"
+Pharokka_phiMA002_CDS_0038,"DNA, RNA and nucleotide metabolism"
+Pharokka_phiMA002_CDS_0039,"DNA, RNA and nucleotide metabolism"
+Pharokka_phiMA002_CDS_0040,unknown function
+Pharokka_phiMA002_CDS_0041,"DNA, RNA and nucleotide metabolism"
+Pharokka_phiMA002_CDS_0042,"DNA, RNA and nucleotide metabolism"
+Pharokka_phiMA002_CDS_0043,unknown function
+Pharokka_phiMA002_CDS_0044,unknown function
+Pharokka_phiMA002_CDS_0045,"moron, auxiliary metabolic gene and host takeover"
+Pharokka_phiMA002_CDS_0046,other
+Pharokka_phiMA002_CDS_0047,"DNA, RNA and nucleotide metabolism"
+Pharokka_phiMA002_CDS_0048,unknown function
+Pharokka_phiMA002_CDS_0049,"DNA, RNA and nucleotide metabolism"
+Pharokka_phiMA002_CDS_0050,unknown function
+Pharokka_phiMA002_CDS_0051,"DNA, RNA and nucleotide metabolism"
+Pharokka_phiMA002_CDS_0052,unknown function
+Pharokka_phiMA002_CDS_0053,unknown function
+Pharokka_phiMA002_CDS_0054,unknown function
+Pharokka_phiMA002_CDS_0055,lysis
+Pharokka_phiMA002_CDS_0056,unknown function
+Pharokka_phiMA002_CDS_0057,unknown function
+Pharokka_phiMA002_CDS_0058,unknown function
+Pharokka_phiMA002_CDS_0059,unknown function
+Pharokka_phiMA002_CDS_0060,unknown function
+Pharokka_phiMA002_CDS_0061,unknown function
+Pharokka_phiMA002_CDS_0062,unknown function
+Pharokka_phiMA002_CDS_0063,unknown function
+Pharokka_phiMA002_CDS_0064,unknown function
+Pharokka_phiMA002_CDS_0065,unknown function
+Pharokka_phiMA002_CDS_0066,unknown function
+Pharokka_phiMA002_CDS_0067,unknown function
+Pharokka_phiMA002_CDS_0068,unknown function
+Pharokka_phiMA002_CDS_0069,unknown function
+Pharokka_phiMA002_CDS_0070,unknown function
+Pharokka_phiMA002_CDS_0071,unknown function
+Pharokka_phiMA002_CDS_0072,unknown function
+Pharokka_phiMA002_CDS_0073,unknown function
+Pharokka_phiMA002_CDS_0074,unknown function
+Pharokka_phiMA002_CDS_0075,unknown function
+Pharokka_phiMA002_CDS_0076,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_8_CDS_0001,head and packaging
+Pharokka_PV_8_CDS_0002,head and packaging
+Pharokka_PV_8_CDS_0003,head and packaging
+Pharokka_PV_8_CDS_0004,unknown function
+Pharokka_PV_8_CDS_0005,head and packaging
+Pharokka_PV_8_CDS_0006,head and packaging
+Pharokka_PV_8_CDS_0007,unknown function
+Pharokka_PV_8_CDS_0008,unknown function
+Pharokka_PV_8_CDS_0009,unknown function
+Pharokka_PV_8_CDS_0010,tail
+Pharokka_PV_8_CDS_0011,unknown function
+Pharokka_PV_8_CDS_0012,unknown function
+Pharokka_PV_8_CDS_0013,head and packaging
+Pharokka_PV_8_CDS_0014,tail
+Pharokka_PV_8_CDS_0015,unknown function
+Pharokka_PV_8_CDS_0016,tail
+Pharokka_PV_8_CDS_0017,unknown function
+Pharokka_PV_8_CDS_0018,unknown function
+Pharokka_PV_8_CDS_0019,unknown function
+Pharokka_PV_8_CDS_0020,unknown function
+Pharokka_PV_8_CDS_0021,unknown function
+Pharokka_PV_8_CDS_0022,unknown function
+Pharokka_PV_8_CDS_0023,unknown function
+Pharokka_PV_8_CDS_0024,unknown function
+Pharokka_PV_8_CDS_0025,unknown function
+Pharokka_PV_8_CDS_0026,unknown function
+Pharokka_PV_8_CDS_0027,unknown function
+Pharokka_PV_8_CDS_0028,unknown function
+Pharokka_PV_8_CDS_0029,unknown function
+Pharokka_PV_8_CDS_0030,unknown function
+Pharokka_PV_8_CDS_0031,unknown function
+Pharokka_PV_8_CDS_0032,unknown function
+Pharokka_PV_8_CDS_0033,transcription regulation
+Pharokka_PV_8_CDS_0034,unknown function
+Pharokka_PV_8_CDS_0035,unknown function
+Pharokka_PV_8_CDS_0036,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_8_CDS_0037,unknown function
+Pharokka_PV_8_CDS_0038,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_8_CDS_0039,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_8_CDS_0040,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_8_CDS_0041,unknown function
+Pharokka_PV_8_CDS_0042,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_8_CDS_0043,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_8_CDS_0044,unknown function
+Pharokka_PV_8_CDS_0045,unknown function
+Pharokka_PV_8_CDS_0046,"moron, auxiliary metabolic gene and host takeover"
+Pharokka_PV_8_CDS_0047,other
+Pharokka_PV_8_CDS_0048,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_8_CDS_0049,unknown function
+Pharokka_PV_8_CDS_0050,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_8_CDS_0051,unknown function
+Pharokka_PV_8_CDS_0052,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_8_CDS_0053,unknown function
+Pharokka_PV_8_CDS_0054,unknown function
+Pharokka_PV_8_CDS_0055,unknown function
+Pharokka_PV_8_CDS_0056,lysis
+Pharokka_PV_8_CDS_0057,unknown function
+Pharokka_PV_8_CDS_0058,unknown function
+Pharokka_PV_8_CDS_0059,unknown function
+Pharokka_PV_8_CDS_0060,unknown function
+Pharokka_PV_8_CDS_0061,unknown function
+Pharokka_PV_8_CDS_0062,unknown function
+Pharokka_PV_8_CDS_0063,unknown function
+Pharokka_PV_8_CDS_0064,unknown function
+Pharokka_PV_8_CDS_0065,unknown function
+Pharokka_PV_8_CDS_0066,unknown function
+Pharokka_PV_8_CDS_0067,unknown function
+Pharokka_PV_8_CDS_0068,unknown function
+Pharokka_PV_8_CDS_0069,unknown function
+Pharokka_PV_8_CDS_0070,unknown function
+Pharokka_PV_8_CDS_0071,unknown function
+Pharokka_PV_8_CDS_0072,unknown function
+Pharokka_PV_8_CDS_0073,unknown function
+Pharokka_PV_8_CDS_0074,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_15_CDS_0001,head and packaging
+Pharokka_PV_15_CDS_0002,head and packaging
+Pharokka_PV_15_CDS_0003,head and packaging
+Pharokka_PV_15_CDS_0004,head and packaging
+Pharokka_PV_15_CDS_0005,head and packaging
+Pharokka_PV_15_CDS_0006,head and packaging
+Pharokka_PV_15_CDS_0007,unknown function
+Pharokka_PV_15_CDS_0008,unknown function
+Pharokka_PV_15_CDS_0009,unknown function
+Pharokka_PV_15_CDS_0010,tail
+Pharokka_PV_15_CDS_0011,unknown function
+Pharokka_PV_15_CDS_0012,unknown function
+Pharokka_PV_15_CDS_0013,head and packaging
+Pharokka_PV_15_CDS_0014,tail
+Pharokka_PV_15_CDS_0015,unknown function
+Pharokka_PV_15_CDS_0016,tail
+Pharokka_PV_15_CDS_0017,unknown function
+Pharokka_PV_15_CDS_0018,unknown function
+Pharokka_PV_15_CDS_0019,unknown function
+Pharokka_PV_15_CDS_0020,unknown function
+Pharokka_PV_15_CDS_0021,unknown function
+Pharokka_PV_15_CDS_0022,unknown function
+Pharokka_PV_15_CDS_0023,unknown function
+Pharokka_PV_15_CDS_0024,unknown function
+Pharokka_PV_15_CDS_0025,unknown function
+Pharokka_PV_15_CDS_0026,unknown function
+Pharokka_PV_15_CDS_0027,unknown function
+Pharokka_PV_15_CDS_0028,unknown function
+Pharokka_PV_15_CDS_0029,unknown function
+Pharokka_PV_15_CDS_0030,unknown function
+Pharokka_PV_15_CDS_0031,unknown function
+Pharokka_PV_15_CDS_0032,unknown function
+Pharokka_PV_15_CDS_0033,transcription regulation
+Pharokka_PV_15_CDS_0034,unknown function
+Pharokka_PV_15_CDS_0035,unknown function
+Pharokka_PV_15_CDS_0036,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_15_CDS_0037,unknown function
+Pharokka_PV_15_CDS_0038,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_15_CDS_0039,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_15_CDS_0040,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_15_CDS_0041,unknown function
+Pharokka_PV_15_CDS_0042,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_15_CDS_0043,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_15_CDS_0044,unknown function
+Pharokka_PV_15_CDS_0045,unknown function
+Pharokka_PV_15_CDS_0046,"moron, auxiliary metabolic gene and host takeover"
+Pharokka_PV_15_CDS_0047,other
+Pharokka_PV_15_CDS_0048,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_15_CDS_0049,unknown function
+Pharokka_PV_15_CDS_0050,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_15_CDS_0051,unknown function
+Pharokka_PV_15_CDS_0052,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_15_CDS_0053,unknown function
+Pharokka_PV_15_CDS_0054,unknown function
+Pharokka_PV_15_CDS_0055,unknown function
+Pharokka_PV_15_CDS_0056,lysis
+Pharokka_PV_15_CDS_0057,unknown function
+Pharokka_PV_15_CDS_0058,unknown function
+Pharokka_PV_15_CDS_0059,unknown function
+Pharokka_PV_15_CDS_0060,unknown function
+Pharokka_PV_15_CDS_0061,unknown function
+Pharokka_PV_15_CDS_0062,unknown function
+Pharokka_PV_15_CDS_0063,unknown function
+Pharokka_PV_15_CDS_0064,unknown function
+Pharokka_PV_15_CDS_0065,unknown function
+Pharokka_PV_15_CDS_0066,unknown function
+Pharokka_PV_15_CDS_0067,unknown function
+Pharokka_PV_15_CDS_0068,unknown function
+Pharokka_PV_15_CDS_0069,unknown function
+Pharokka_PV_15_CDS_0070,unknown function
+Pharokka_PV_15_CDS_0071,unknown function
+Pharokka_PV_15_CDS_0072,unknown function
+Pharokka_PV_15_CDS_0073,unknown function
+Pharokka_PV_15_CDS_0074,unknown function
+Pharokka_PV_15_CDS_0075,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_11_CDS_0001,head and packaging
+Pharokka_PV_11_CDS_0002,head and packaging
+Pharokka_PV_11_CDS_0003,head and packaging
+Pharokka_PV_11_CDS_0004,unknown function
+Pharokka_PV_11_CDS_0005,head and packaging
+Pharokka_PV_11_CDS_0006,head and packaging
+Pharokka_PV_11_CDS_0007,unknown function
+Pharokka_PV_11_CDS_0008,unknown function
+Pharokka_PV_11_CDS_0009,unknown function
+Pharokka_PV_11_CDS_0010,tail
+Pharokka_PV_11_CDS_0011,unknown function
+Pharokka_PV_11_CDS_0012,unknown function
+Pharokka_PV_11_CDS_0013,head and packaging
+Pharokka_PV_11_CDS_0014,tail
+Pharokka_PV_11_CDS_0015,unknown function
+Pharokka_PV_11_CDS_0016,tail
+Pharokka_PV_11_CDS_0017,unknown function
+Pharokka_PV_11_CDS_0018,unknown function
+Pharokka_PV_11_CDS_0019,unknown function
+Pharokka_PV_11_CDS_0020,unknown function
+Pharokka_PV_11_CDS_0021,unknown function
+Pharokka_PV_11_CDS_0022,unknown function
+Pharokka_PV_11_CDS_0023,unknown function
+Pharokka_PV_11_CDS_0024,unknown function
+Pharokka_PV_11_CDS_0025,unknown function
+Pharokka_PV_11_CDS_0026,unknown function
+Pharokka_PV_11_CDS_0027,unknown function
+Pharokka_PV_11_CDS_0028,unknown function
+Pharokka_PV_11_CDS_0029,unknown function
+Pharokka_PV_11_CDS_0030,unknown function
+Pharokka_PV_11_CDS_0031,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_11_CDS_0032,unknown function
+Pharokka_PV_11_CDS_0033,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_11_CDS_0034,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_11_CDS_0035,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_11_CDS_0036,unknown function
+Pharokka_PV_11_CDS_0037,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_11_CDS_0038,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_11_CDS_0039,unknown function
+Pharokka_PV_11_CDS_0040,unknown function
+Pharokka_PV_11_CDS_0041,"moron, auxiliary metabolic gene and host takeover"
+Pharokka_PV_11_CDS_0042,other
+Pharokka_PV_11_CDS_0043,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_11_CDS_0044,unknown function
+Pharokka_PV_11_CDS_0045,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_11_CDS_0046,unknown function
+Pharokka_PV_11_CDS_0047,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_11_CDS_0048,unknown function
+Pharokka_PV_11_CDS_0049,unknown function
+Pharokka_PV_11_CDS_0050,unknown function
+Pharokka_PV_11_CDS_0051,lysis
+Pharokka_PV_11_CDS_0052,unknown function
+Pharokka_PV_11_CDS_0053,unknown function
+Pharokka_PV_11_CDS_0054,unknown function
+Pharokka_PV_11_CDS_0055,unknown function
+Pharokka_PV_11_CDS_0056,unknown function
+Pharokka_PV_11_CDS_0057,unknown function
+Pharokka_PV_11_CDS_0058,unknown function
+Pharokka_PV_11_CDS_0059,unknown function
+Pharokka_PV_11_CDS_0060,unknown function
+Pharokka_PV_11_CDS_0061,unknown function
+Pharokka_PV_11_CDS_0062,unknown function
+Pharokka_PV_11_CDS_0063,unknown function
+Pharokka_PV_11_CDS_0064,unknown function
+Pharokka_PV_11_CDS_0065,unknown function
+Pharokka_PV_11_CDS_0066,unknown function
+Pharokka_PV_11_CDS_0067,unknown function
+Pharokka_PV_11_CDS_0068,unknown function
+Pharokka_PV_11_CDS_0069,unknown function
+Pharokka_PV_11_CDS_0070,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_7BP_CDS_0001,head and packaging
+Pharokka_PV_7BP_CDS_0002,head and packaging
+Pharokka_PV_7BP_CDS_0003,head and packaging
+Pharokka_PV_7BP_CDS_0004,unknown function
+Pharokka_PV_7BP_CDS_0005,head and packaging
+Pharokka_PV_7BP_CDS_0006,head and packaging
+Pharokka_PV_7BP_CDS_0007,unknown function
+Pharokka_PV_7BP_CDS_0008,unknown function
+Pharokka_PV_7BP_CDS_0009,unknown function
+Pharokka_PV_7BP_CDS_0010,tail
+Pharokka_PV_7BP_CDS_0011,unknown function
+Pharokka_PV_7BP_CDS_0012,unknown function
+Pharokka_PV_7BP_CDS_0013,head and packaging
+Pharokka_PV_7BP_CDS_0014,tail
+Pharokka_PV_7BP_CDS_0015,unknown function
+Pharokka_PV_7BP_CDS_0016,tail
+Pharokka_PV_7BP_CDS_0017,unknown function
+Pharokka_PV_7BP_CDS_0018,unknown function
+Pharokka_PV_7BP_CDS_0019,unknown function
+Pharokka_PV_7BP_CDS_0020,unknown function
+Pharokka_PV_7BP_CDS_0021,unknown function
+Pharokka_PV_7BP_CDS_0022,unknown function
+Pharokka_PV_7BP_CDS_0023,unknown function
+Pharokka_PV_7BP_CDS_0024,unknown function
+Pharokka_PV_7BP_CDS_0025,unknown function
+Pharokka_PV_7BP_CDS_0026,unknown function
+Pharokka_PV_7BP_CDS_0027,unknown function
+Pharokka_PV_7BP_CDS_0028,unknown function
+Pharokka_PV_7BP_CDS_0029,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_7BP_CDS_0030,unknown function
+Pharokka_PV_7BP_CDS_0031,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_7BP_CDS_0032,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_7BP_CDS_0033,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_7BP_CDS_0034,unknown function
+Pharokka_PV_7BP_CDS_0035,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_7BP_CDS_0036,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_7BP_CDS_0037,unknown function
+Pharokka_PV_7BP_CDS_0038,unknown function
+Pharokka_PV_7BP_CDS_0039,"moron, auxiliary metabolic gene and host takeover"
+Pharokka_PV_7BP_CDS_0040,other
+Pharokka_PV_7BP_CDS_0041,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_7BP_CDS_0042,unknown function
+Pharokka_PV_7BP_CDS_0043,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_7BP_CDS_0044,unknown function
+Pharokka_PV_7BP_CDS_0045,unknown function
+Pharokka_PV_7BP_CDS_0046,unknown function
+Pharokka_PV_7BP_CDS_0047,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_7BP_CDS_0048,unknown function
+Pharokka_PV_7BP_CDS_0049,unknown function
+Pharokka_PV_7BP_CDS_0050,unknown function
+Pharokka_PV_7BP_CDS_0051,lysis
+Pharokka_PV_7BP_CDS_0052,unknown function
+Pharokka_PV_7BP_CDS_0053,unknown function
+Pharokka_PV_7BP_CDS_0054,unknown function
+Pharokka_PV_7BP_CDS_0055,unknown function
+Pharokka_PV_7BP_CDS_0056,unknown function
+Pharokka_PV_7BP_CDS_0057,unknown function
+Pharokka_PV_7BP_CDS_0058,unknown function
+Pharokka_PV_7BP_CDS_0059,unknown function
+Pharokka_PV_7BP_CDS_0060,unknown function
+Pharokka_PV_7BP_CDS_0061,unknown function
+Pharokka_PV_7BP_CDS_0062,unknown function
+Pharokka_PV_7BP_CDS_0063,unknown function
+Pharokka_PV_7BP_CDS_0064,unknown function
+Pharokka_PV_7BP_CDS_0065,unknown function
+Pharokka_PV_7BP_CDS_0066,unknown function
+Pharokka_PV_7BP_CDS_0067,unknown function
+Pharokka_PV_7BP_CDS_0068,unknown function
+Pharokka_PV_7BP_CDS_0069,"DNA, RNA and nucleotide metabolism"
+Pharokka_phiMA001_CDS_0001,head and packaging
+Pharokka_phiMA001_CDS_0002,head and packaging
+Pharokka_phiMA001_CDS_0003,head and packaging
+Pharokka_phiMA001_CDS_0004,unknown function
+Pharokka_phiMA001_CDS_0005,head and packaging
+Pharokka_phiMA001_CDS_0006,head and packaging
+Pharokka_phiMA001_CDS_0007,unknown function
+Pharokka_phiMA001_CDS_0008,unknown function
+Pharokka_phiMA001_CDS_0009,tail
+Pharokka_phiMA001_CDS_0010,unknown function
+Pharokka_phiMA001_CDS_0011,unknown function
+Pharokka_phiMA001_CDS_0012,head and packaging
+Pharokka_phiMA001_CDS_0013,tail
+Pharokka_phiMA001_CDS_0014,unknown function
+Pharokka_phiMA001_CDS_0015,tail
+Pharokka_phiMA001_CDS_0016,unknown function
+Pharokka_phiMA001_CDS_0017,unknown function
+Pharokka_phiMA001_CDS_0018,unknown function
+Pharokka_phiMA001_CDS_0019,unknown function
+Pharokka_phiMA001_CDS_0020,unknown function
+Pharokka_phiMA001_CDS_0021,unknown function
+Pharokka_phiMA001_CDS_0022,unknown function
+Pharokka_phiMA001_CDS_0023,unknown function
+Pharokka_phiMA001_CDS_0024,unknown function
+Pharokka_phiMA001_CDS_0025,unknown function
+Pharokka_phiMA001_CDS_0026,unknown function
+Pharokka_phiMA001_CDS_0027,unknown function
+Pharokka_phiMA001_CDS_0028,unknown function
+Pharokka_phiMA001_CDS_0029,unknown function
+Pharokka_phiMA001_CDS_0030,unknown function
+Pharokka_phiMA001_CDS_0031,unknown function
+Pharokka_phiMA001_CDS_0032,unknown function
+Pharokka_phiMA001_CDS_0033,unknown function
+Pharokka_phiMA001_CDS_0034,unknown function
+Pharokka_phiMA001_CDS_0035,"DNA, RNA and nucleotide metabolism"
+Pharokka_phiMA001_CDS_0036,unknown function
+Pharokka_phiMA001_CDS_0037,"DNA, RNA and nucleotide metabolism"
+Pharokka_phiMA001_CDS_0038,"DNA, RNA and nucleotide metabolism"
+Pharokka_phiMA001_CDS_0039,"DNA, RNA and nucleotide metabolism"
+Pharokka_phiMA001_CDS_0040,unknown function
+Pharokka_phiMA001_CDS_0041,"DNA, RNA and nucleotide metabolism"
+Pharokka_phiMA001_CDS_0042,"DNA, RNA and nucleotide metabolism"
+Pharokka_phiMA001_CDS_0043,unknown function
+Pharokka_phiMA001_CDS_0044,unknown function
+Pharokka_phiMA001_CDS_0045,"moron, auxiliary metabolic gene and host takeover"
+Pharokka_phiMA001_CDS_0046,other
+Pharokka_phiMA001_CDS_0047,"DNA, RNA and nucleotide metabolism"
+Pharokka_phiMA001_CDS_0048,unknown function
+Pharokka_phiMA001_CDS_0049,"DNA, RNA and nucleotide metabolism"
+Pharokka_phiMA001_CDS_0050,unknown function
+Pharokka_phiMA001_CDS_0051,"DNA, RNA and nucleotide metabolism"
+Pharokka_phiMA001_CDS_0052,unknown function
+Pharokka_phiMA001_CDS_0053,unknown function
+Pharokka_phiMA001_CDS_0054,unknown function
+Pharokka_phiMA001_CDS_0055,lysis
+Pharokka_phiMA001_CDS_0056,unknown function
+Pharokka_phiMA001_CDS_0057,unknown function
+Pharokka_phiMA001_CDS_0058,unknown function
+Pharokka_phiMA001_CDS_0059,unknown function
+Pharokka_phiMA001_CDS_0060,unknown function
+Pharokka_phiMA001_CDS_0061,unknown function
+Pharokka_phiMA001_CDS_0062,unknown function
+Pharokka_phiMA001_CDS_0063,unknown function
+Pharokka_phiMA001_CDS_0064,unknown function
+Pharokka_phiMA001_CDS_0065,unknown function
+Pharokka_phiMA001_CDS_0066,unknown function
+Pharokka_phiMA001_CDS_0067,unknown function
+Pharokka_phiMA001_CDS_0068,unknown function
+Pharokka_phiMA001_CDS_0069,unknown function
+Pharokka_phiMA001_CDS_0070,unknown function
+Pharokka_phiMA001_CDS_0071,unknown function
+Pharokka_phiMA001_CDS_0072,unknown function
+Pharokka_phiMA001_CDS_0073,unknown function
+Pharokka_phiMA001_CDS_0074,unknown function
+Pharokka_phiMA001_CDS_0075,unknown function
+Pharokka_phiMA001_CDS_0076,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_12_CDS_0001,head and packaging
+Pharokka_PV_12_CDS_0002,head and packaging
+Pharokka_PV_12_CDS_0003,head and packaging
+Pharokka_PV_12_CDS_0004,unknown function
+Pharokka_PV_12_CDS_0005,head and packaging
+Pharokka_PV_12_CDS_0006,head and packaging
+Pharokka_PV_12_CDS_0007,unknown function
+Pharokka_PV_12_CDS_0008,unknown function
+Pharokka_PV_12_CDS_0009,unknown function
+Pharokka_PV_12_CDS_0010,tail
+Pharokka_PV_12_CDS_0011,unknown function
+Pharokka_PV_12_CDS_0012,unknown function
+Pharokka_PV_12_CDS_0013,head and packaging
+Pharokka_PV_12_CDS_0014,tail
+Pharokka_PV_12_CDS_0015,unknown function
+Pharokka_PV_12_CDS_0016,tail
+Pharokka_PV_12_CDS_0017,unknown function
+Pharokka_PV_12_CDS_0018,unknown function
+Pharokka_PV_12_CDS_0019,unknown function
+Pharokka_PV_12_CDS_0020,unknown function
+Pharokka_PV_12_CDS_0021,unknown function
+Pharokka_PV_12_CDS_0022,unknown function
+Pharokka_PV_12_CDS_0023,unknown function
+Pharokka_PV_12_CDS_0024,unknown function
+Pharokka_PV_12_CDS_0025,unknown function
+Pharokka_PV_12_CDS_0026,unknown function
+Pharokka_PV_12_CDS_0027,unknown function
+Pharokka_PV_12_CDS_0028,unknown function
+Pharokka_PV_12_CDS_0029,unknown function
+Pharokka_PV_12_CDS_0030,unknown function
+Pharokka_PV_12_CDS_0031,unknown function
+Pharokka_PV_12_CDS_0032,unknown function
+Pharokka_PV_12_CDS_0033,unknown function
+Pharokka_PV_12_CDS_0034,transcription regulation
+Pharokka_PV_12_CDS_0035,unknown function
+Pharokka_PV_12_CDS_0036,unknown function
+Pharokka_PV_12_CDS_0037,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_12_CDS_0038,unknown function
+Pharokka_PV_12_CDS_0039,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_12_CDS_0040,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_12_CDS_0041,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_12_CDS_0042,unknown function
+Pharokka_PV_12_CDS_0043,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_12_CDS_0044,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_12_CDS_0045,unknown function
+Pharokka_PV_12_CDS_0046,unknown function
+Pharokka_PV_12_CDS_0047,"moron, auxiliary metabolic gene and host takeover"
+Pharokka_PV_12_CDS_0048,other
+Pharokka_PV_12_CDS_0049,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_12_CDS_0050,unknown function
+Pharokka_PV_12_CDS_0051,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_12_CDS_0052,unknown function
+Pharokka_PV_12_CDS_0053,"DNA, RNA and nucleotide metabolism"
+Pharokka_PV_12_CDS_0054,unknown function
+Pharokka_PV_12_CDS_0055,unknown function
+Pharokka_PV_12_CDS_0056,unknown function
+Pharokka_PV_12_CDS_0057,lysis
+Pharokka_PV_12_CDS_0058,unknown function
+Pharokka_PV_12_CDS_0059,unknown function
+Pharokka_PV_12_CDS_0060,unknown function
+Pharokka_PV_12_CDS_0061,unknown function
+Pharokka_PV_12_CDS_0062,unknown function
+Pharokka_PV_12_CDS_0063,unknown function
+Pharokka_PV_12_CDS_0064,unknown function
+Pharokka_PV_12_CDS_0065,unknown function
+Pharokka_PV_12_CDS_0066,unknown function
+Pharokka_PV_12_CDS_0067,unknown function
+Pharokka_PV_12_CDS_0068,unknown function
+Pharokka_PV_12_CDS_0069,unknown function
+Pharokka_PV_12_CDS_0070,unknown function
+Pharokka_PV_12_CDS_0071,unknown function
+Pharokka_PV_12_CDS_0072,unknown function
+Pharokka_PV_12_CDS_0073,unknown function
+Pharokka_PV_12_CDS_0074,unknown function
+Pharokka_PV_12_CDS_0075,unknown function
+Pharokka_PV_12_CDS_0076,unknown function
+Pharokka_PV_12_CDS_0077,"DNA, RNA and nucleotide metabolism"
+Pharokka_phi7A_CDS_0001,head and packaging
+Pharokka_phi7A_CDS_0002,head and packaging
+Pharokka_phi7A_CDS_0003,head and packaging
+Pharokka_phi7A_CDS_0004,head and packaging
+Pharokka_phi7A_CDS_0005,head and packaging
+Pharokka_phi7A_CDS_0006,head and packaging
+Pharokka_phi7A_CDS_0007,unknown function
+Pharokka_phi7A_CDS_0008,unknown function
+Pharokka_phi7A_CDS_0009,unknown function
+Pharokka_phi7A_CDS_0010,tail
+Pharokka_phi7A_CDS_0011,unknown function
+Pharokka_phi7A_CDS_0012,unknown function
+Pharokka_phi7A_CDS_0013,head and packaging
+Pharokka_phi7A_CDS_0014,tail
+Pharokka_phi7A_CDS_0015,unknown function
+Pharokka_phi7A_CDS_0016,tail
+Pharokka_phi7A_CDS_0017,unknown function
+Pharokka_phi7A_CDS_0018,unknown function
+Pharokka_phi7A_CDS_0019,unknown function
+Pharokka_phi7A_CDS_0020,unknown function
+Pharokka_phi7A_CDS_0021,unknown function
+Pharokka_phi7A_CDS_0022,unknown function
+Pharokka_phi7A_CDS_0023,unknown function
+Pharokka_phi7A_CDS_0024,unknown function
+Pharokka_phi7A_CDS_0025,unknown function
+Pharokka_phi7A_CDS_0026,unknown function
+Pharokka_phi7A_CDS_0027,unknown function
+Pharokka_phi7A_CDS_0028,unknown function
+Pharokka_phi7A_CDS_0029,unknown function
+Pharokka_phi7A_CDS_0030,unknown function
+Pharokka_phi7A_CDS_0031,unknown function
+Pharokka_phi7A_CDS_0032,unknown function
+Pharokka_phi7A_CDS_0033,unknown function
+Pharokka_phi7A_CDS_0034,unknown function
+Pharokka_phi7A_CDS_0035,unknown function
+Pharokka_phi7A_CDS_0036,"DNA, RNA and nucleotide metabolism"
+Pharokka_phi7A_CDS_0037,unknown function
+Pharokka_phi7A_CDS_0038,"DNA, RNA and nucleotide metabolism"
+Pharokka_phi7A_CDS_0039,"DNA, RNA and nucleotide metabolism"
+Pharokka_phi7A_CDS_0040,"DNA, RNA and nucleotide metabolism"
+Pharokka_phi7A_CDS_0041,unknown function
+Pharokka_phi7A_CDS_0042,"DNA, RNA and nucleotide metabolism"
+Pharokka_phi7A_CDS_0043,"DNA, RNA and nucleotide metabolism"
+Pharokka_phi7A_CDS_0044,unknown function
+Pharokka_phi7A_CDS_0045,unknown function
+Pharokka_phi7A_CDS_0046,"moron, auxiliary metabolic gene and host takeover"
+Pharokka_phi7A_CDS_0047,other
+Pharokka_phi7A_CDS_0048,"DNA, RNA and nucleotide metabolism"
+Pharokka_phi7A_CDS_0049,unknown function
+Pharokka_phi7A_CDS_0050,"DNA, RNA and nucleotide metabolism"
+Pharokka_phi7A_CDS_0051,unknown function
+Pharokka_phi7A_CDS_0052,"DNA, RNA and nucleotide metabolism"
+Pharokka_phi7A_CDS_0053,unknown function
+Pharokka_phi7A_CDS_0054,unknown function
+Pharokka_phi7A_CDS_0055,unknown function
+Pharokka_phi7A_CDS_0056,lysis
+Pharokka_phi7A_CDS_0057,unknown function
+Pharokka_phi7A_CDS_0058,unknown function
+Pharokka_phi7A_CDS_0059,unknown function
+Pharokka_phi7A_CDS_0060,unknown function
+Pharokka_phi7A_CDS_0061,unknown function
+Pharokka_phi7A_CDS_0062,unknown function
+Pharokka_phi7A_CDS_0063,unknown function
+Pharokka_phi7A_CDS_0064,unknown function
+Pharokka_phi7A_CDS_0065,unknown function
+Pharokka_phi7A_CDS_0066,unknown function
+Pharokka_phi7A_CDS_0067,unknown function
+Pharokka_phi7A_CDS_0068,unknown function
+Pharokka_phi7A_CDS_0069,unknown function
+Pharokka_phi7A_CDS_0070,unknown function
+Pharokka_phi7A_CDS_0071,unknown function
+Pharokka_phi7A_CDS_0072,unknown function
+Pharokka_phi7A_CDS_0073,"DNA, RNA and nucleotide metabolism"
