@@ -44,7 +44,7 @@ Note that you should have [conda](https://docs.conda.io/projects/conda/en/latest
 
 The dependencies can be installed with the yaml file in this repo. This will create a conda environnement containning all the dependencies. To do so, run this command: 
 ```bash
-# TO BE DONE
+conda env create -f genALLYgn_env.yml
 ```
 ## Usage
 The tool takes in input a combination of a genbank file and a protein fasta file per sample (one folder per file type)
@@ -67,7 +67,7 @@ Before launching the script, first complete the config file:
 
 Once all the paths are set up, activate your conda environnemnt:
 ```bash
-conda activate name_of_your_env
+conda activate genALLYgn_env
 ```
 
 Then, go in the directory containning the scripts and run the following command:
