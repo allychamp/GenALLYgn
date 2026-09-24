@@ -1,4 +1,4 @@
-# GenALLYgn - Genes alignement and visualisation tool   
+# GenALLYgn - Genes alignment and visualisation tool   
 <div style="display" flex; justify-content: space-between; align="center">
 
   <img src="Image/logo_lab.png" alt="Lab's logo" width="15%" style="margin-left: 10px;">
@@ -15,7 +15,7 @@
 
 </div>
   <p>
-    <strong>This repository contains scripts used to align and visualise small DNA fragments such as phages genomes.</strong>
+    <strong>This repository contains scripts used to align and visualise small DNA fragments such as phage genomes.</strong>
   </p>
 <img src="Image/Output_example.svg" alt="Lab's logo" style="margin-left: 10px;">
 
@@ -42,7 +42,7 @@ It contains the following tree:
 
 Note that you should have [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) or [miniconda](https://docs.anaconda.com/miniconda/) installed to run this pipeline. 
 
-The dependencies can be installed with the yaml file in this repo. This will create a conda environnement containning all the dependencies. To do so, run this command: 
+The dependencies can be installed with the yaml file in this repo. This will create a conda environment containing all the dependencies. To do so, run this command: 
 ```bash
 conda env create -f genALLYgn_env.yml
 ```
@@ -63,17 +63,17 @@ Before launching the script, first complete the config file:
 | `blast.num_threads` | Number of threads to use for the BLAST analysis; more threads speeds up the run |
 | `plot.spacing` | Spacing between genomes in the plot |
 | `plot.label_width` | Width of the genome labels in the plot |
-| `plot.genome_order` | Order in which genomes should appear (must match the genome file names) if not specifie, genomes will be order by similarity |
+| `plot.genome_order` | Order in which genomes should appear (must match the genome file names); if not specified, genomes will be ordered by similarity |
 
-Once all the paths are set up, activate your conda environnemnt:
+Once all the paths are set up, activate your conda environment:
 ```bash
 conda activate genALLYgn_env
 ```
 
-Then, go in the directory containning the scripts and run the following command:
+Then, go to the directory containing the scripts and run the following command:
 ```bash
 python -m src.main
 ```
 ## Citation 
-Please keep an eye open for the preprint of this tool. In the meantime, please cite this repository if you use it in your work:
+Please keep an eye out for the preprint of this tool. In the meantime, please cite this repository if you use it in your work:
 Champoux, A., Jacques, P., & Fortier, L. (2026). GeneALLYgn [Computer software]. https://github.com/allychamp/phage-genome-analysis-pipeline
