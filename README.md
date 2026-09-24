@@ -5,7 +5,7 @@
 </div>
 
 *<div align="center">
-    By Ally Champoux, Université de Sherbrooke, 08/09/2024*
+    By Ally Champoux, Université de Sherbrooke, 24/09/2026*
 </div>
 
 <div align="center">
