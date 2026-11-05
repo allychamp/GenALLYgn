@@ -43,6 +43,6 @@ plot:
   label_width: 25
   #Specify in which order you want the genomes (as to be the same as the 
   #file name) if not specifie, genomes will be order by similarity
-  genome_order:
-    - "genome1"
-    - "genome2"
+  #genome_order:
+    #- "genome1"
+    #- "genome2"
